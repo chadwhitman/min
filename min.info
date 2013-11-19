@@ -7,7 +7,6 @@ stylesheets[all][] = css/main.css
 
 
 ; Regions
-
 regions[header] = Header
 regions[highlighted] = Highlighted
 regions[help] = Help
