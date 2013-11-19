@@ -136,27 +136,27 @@ h1#site-name {
     color: #333333; }
 
 /** Layout **/
-/* line 4, ../sass/_layout.scss */
+/* line 3, ../sass/_layout.scss */
 body {
   max-width: 700px;
   margin: 0 auto; }
 
-/* line 9, ../sass/_layout.scss */
+/* line 8, ../sass/_layout.scss */
 header {
   margin-bottom: 30px; }
 
-/* line 13, ../sass/_layout.scss */
+/* line 12, ../sass/_layout.scss */
 #site-info {
   float: left;
   padding-top: 40px; }
 
 /** LOGO **/
-/* line 19, ../sass/_layout.scss */
+/* line 18, ../sass/_layout.scss */
 #logo {
   float: right;
   padding-top: 22px;
   padding-right: 10px; }
-  /* line 23, ../sass/_layout.scss */
+  /* line 22, ../sass/_layout.scss */
   #logo img {
     width: 75px;
     height: 75px;
@@ -170,7 +170,7 @@ header {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%); }
-    /* line 36, ../sass/_layout.scss */
+    /* line 35, ../sass/_layout.scss */
     #logo img:hover {
       -webkit-filter: grayscale(0%);
       -moz-filter: grayscale(0%);
@@ -237,25 +237,24 @@ header {
   margin: 10px 0px 20px 0px; }
 
 /** Fonts & Colors **/
-/** Variables **/
 /** Media Queries **/
 @media (min-width: 240px) and (max-width: 500px) and (orientation: portrait) {
-  /* line 9, ../sass/_media.scss */
+  /* line 11, ../sass/_media.scss */
   #site-info {
     float: none;
     text-align: center; }
 
-  /* line 14, ../sass/_media.scss */
+  /* line 16, ../sass/_media.scss */
   #logo {
     float: none;
     padding-left: 22%; }
 
-  /* line 19, ../sass/_media.scss */
+  /* line 21, ../sass/_media.scss */
   #page .content {
     padding-left: 10px;
     padding-right: 10px; } }
 @media (max-width: 700px) and (orientation: landscape) {
-  /* line 28, ../sass/_media.scss */
+  /* line 30, ../sass/_media.scss */
   #page .content, header {
     padding-left: 10px;
     padding-right: 10px; } }

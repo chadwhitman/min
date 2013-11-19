@@ -3,8 +3,10 @@
 $width-small: 240px;
 $width-medium: 500px;
 $width-large: 700px;
+$p: portrait;
+$l: landscape;
 
-@media (min-width: $width-small) and (max-width: $width-medium) and (orientation: portrait) {
+@media (min-width: $width-small) and (max-width: $width-medium) and (orientation: $p) {
 
 	#site-info {
 		float: none;
@@ -23,7 +25,7 @@ $width-large: 700px;
 
 }
 
-@media (max-width: $width-large) and (orientation: landscape) {
+@media (max-width: $width-large) and (orientation: $l) {
 
 	#page .content, header {
 		padding-left: 10px;

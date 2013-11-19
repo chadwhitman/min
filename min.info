@@ -5,6 +5,8 @@ core = 7.x
 ; stylesheets
 stylesheets[all][] = css/main.css
 
+;Scripts
+
 
 ; Regions
 regions[header] = Header
