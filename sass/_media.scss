@@ -2,7 +2,6 @@ $width-small: 240px;
 $width-medium: 500px;
 $width-large: 700px;
 
-
 @media (min-width: $width-small) and (max-width: $width-medium) and (orientation: portrait) {
 
 	#site-info {

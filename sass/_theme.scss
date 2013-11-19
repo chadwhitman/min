@@ -1,0 +1,66 @@
+/** Drupal Theme Styles **/
+
+
+/** Admin **/
+
+.submitted {
+	display:none;
+}
+
+/** Views **/
+
+.views-field-field-post-tags {
+	font-family: $crimson;
+	float:left;
+	a {
+		color: $orange;
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+}
+
+.views-field-title {
+	font-size: 2.6em;
+	text-align:center;
+	text-transform: uppercase;
+	font-family: $neuton;
+	color: $orange;
+	clear:both;
+	a {
+		font-family: $neuton;
+		color: $orange;
+		&:hover {
+			color: $grey;
+		}
+	}
+}
+
+.views-row {
+	margin-bottom: 80px;
+}
+
+.views-view-grid img {
+	border: 2px solid $orange;
+}
+
+/** Content **/
+
+.content .node {
+	margin-bottom: 50px;
+}
+
+/** Modules **/
+
+.views-field-field-post-dates  {
+	float:right;
+	font-family: $crimson;
+    color: $orange;
+    clear:both;
+}
+
+.field-name-field-post-dates {
+	color: $orange;
+	margin: 10px 0px 20px 0px;
+}
+

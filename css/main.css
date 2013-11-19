@@ -1,56 +1,112 @@
-/** Variables **/
+/** Main Sass File **/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 17, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 21, ../sass/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 25, ../sass/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 29, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 34, ../sass/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 41, ../sass/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 47, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/** Global Styles **/
 /** Colors **/
+/** Fonts **/
 /** Styles **/
-/* line 14, ../sass/main.scss */
+/* line 16, ../sass/_base.scss */
 body {
   max-width: 700px;
   margin: 0 auto; }
 
-/* line 19, ../sass/main.scss */
+/** Images **/
+/* line 23, ../sass/_base.scss */
 img {
   max-width: 500px;
   height: auto; }
 
-/** Admin **/
-/* line 26, ../sass/main.scss */
-.submitted {
-  display: none; }
-
-/** Global **/
-/* line 32, ../sass/main.scss */
+/** Links **/
+/* line 31, ../sass/_base.scss */
 a {
   text-decoration: none;
   color: #cc6600; }
-  /* line 35, ../sass/main.scss */
+  /* line 34, ../sass/_base.scss */
   a:hover {
     color: #333333; }
 
-/* line 40, ../sass/main.scss */
-ul.inline li {
-  padding: 0px 20px 0px 0px; }
-
-/* line 45, ../sass/main.scss */
-.pager li a {
-  font-family: "Crimson Text", serif;
-  text-transform: uppercase; }
-
-/* line 51, ../sass/main.scss */
+/** Paragraphs **/
+/* line 41, ../sass/_base.scss */
 p {
   font-size: 25px;
   line-height: 37px;
   font-family: "Crimson Text", serif;
   color: #333333; }
-  /* line 56, ../sass/main.scss */
+  /* line 46, ../sass/_base.scss */
   p:first-letter {
     font-size: 40px;
     font-weight: 700; }
 
-/** Headers **/
-/* line 64, ../sass/main.scss */
-header {
-  margin-bottom: 30px; }
+/** Lists **/
+/* line 55, ../sass/_base.scss */
+ul.inline li {
+  padding: 0px 20px 0px 0px; }
 
-/* line 68, ../sass/main.scss */
+/* line 60, ../sass/_base.scss */
+.pager li a {
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase; }
+
+/* line 66, ../sass/_base.scss */
+ul#main-menu {
+  font-family: "Crimson Text", serif;
+  color: #333333;
+  font-size: 0.8em; }
+  /* line 70, ../sass/_base.scss */
+  ul#main-menu li {
+    padding: 0px 10px 0px 0px; }
+    /* line 73, ../sass/_base.scss */
+    ul#main-menu li a {
+      color: #333333; }
+      /* line 75, ../sass/_base.scss */
+      ul#main-menu li a:hover {
+        color: #cc6600; }
+
+/** Header Styles **/
+/* line 84, ../sass/_base.scss */
 h2 {
   margin-top: 0px;
   font-size: 1.3em;
@@ -58,14 +114,14 @@ h2 {
   text-transform: uppercase;
   font-family: "Coda", cursive;
   color: #cc6600; }
-  /* line 75, ../sass/main.scss */
+  /* line 91, ../sass/_base.scss */
   h2 #site-slogan {
     font-family: "Crimson Text", serif;
     font-size: 1.0em;
     color: #333333;
     margin-top: 0px; }
 
-/* line 84, ../sass/main.scss */
+/* line 100, ../sass/_base.scss */
 h1#page-title {
   margin-top: 0px;
   font-size: 2.6em;
@@ -75,43 +131,32 @@ h1#page-title {
   font-family: "Coda", cursive;
   color: #cc6600;
   clear: both; }
-/* line 95, ../sass/main.scss */
+/* line 111, ../sass/_base.scss */
 h1#site-name {
   margin-bottom: 0px;
   font-family: "Crimson Text", serif;
   font-weight: 700;
   font-size: 2.8em; }
-  /* line 100, ../sass/main.scss */
+  /* line 116, ../sass/_base.scss */
   h1#site-name a {
     color: #333333; }
 
-/** Header Info **/
-/* line 109, ../sass/main.scss */
-ul#main-menu {
-  font-family: "Crimson Text", serif;
-  color: #333333;
-  font-size: 0.8em; }
-  /* line 113, ../sass/main.scss */
-  ul#main-menu li {
-    padding: 0px 10px 0px 0px; }
-    /* line 116, ../sass/main.scss */
-    ul#main-menu li a {
-      color: #333333; }
-      /* line 118, ../sass/main.scss */
-      ul#main-menu li a:hover {
-        color: #cc6600; }
+/** Layout **/
+/* line 3, ../sass/_layout.scss */
+header {
+  margin-bottom: 30px; }
 
-/* line 125, ../sass/main.scss */
+/* line 7, ../sass/_layout.scss */
 #site-info {
   float: left; }
 
 /** LOGO **/
-/* line 130, ../sass/main.scss */
+/* line 12, ../sass/_layout.scss */
 #logo {
   float: right;
   padding-top: 22px;
   padding-right: 10px; }
-  /* line 134, ../sass/main.scss */
+  /* line 16, ../sass/_layout.scss */
   #logo img {
     width: 75px;
     height: 75px;
@@ -125,41 +170,31 @@ ul#main-menu {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%); }
-    /* line 147, ../sass/main.scss */
+    /* line 29, ../sass/_layout.scss */
     #logo img:hover {
       -webkit-filter: grayscale(0%);
       -moz-filter: grayscale(0%);
       filter: grayscale(0%); }
 
+/** Drupal Theme Styles **/
+/** Admin **/
+/* line 6, ../sass/_theme.scss */
+.submitted {
+  display: none; }
+
 /** Views **/
-/* line 157, ../sass/main.scss */
+/* line 12, ../sass/_theme.scss */
 .views-field-field-post-tags {
   font-family: "Crimson Text", serif;
   float: left; }
-  /* line 160, ../sass/main.scss */
+  /* line 15, ../sass/_theme.scss */
   .views-field-field-post-tags a {
     color: #cc6600; }
-    /* line 162, ../sass/main.scss */
+    /* line 17, ../sass/_theme.scss */
     .views-field-field-post-tags a:hover {
       text-decoration: underline; }
 
-/* line 168, ../sass/main.scss */
-.content .node {
-  margin-bottom: 50px; }
-
-/* line 172, ../sass/main.scss */
-.views-field-field-post-dates {
-  float: right;
-  font-family: "Crimson Text", serif;
-  color: #cc6600;
-  clear: both; }
-
-/* line 179, ../sass/main.scss */
-.field-name-field-post-dates {
-  color: #cc6600;
-  margin: 10px 0px 20px 0px; }
-
-/* line 185, ../sass/main.scss */
+/* line 23, ../sass/_theme.scss */
 .views-field-title {
   font-size: 2.6em;
   text-align: center;
@@ -167,40 +202,59 @@ ul#main-menu {
   font-family: "Coda", cursive;
   color: #cc6600;
   clear: both; }
-  /* line 192, ../sass/main.scss */
+  /* line 30, ../sass/_theme.scss */
   .views-field-title a {
     font-family: "Coda", cursive;
     color: #cc6600; }
-    /* line 195, ../sass/main.scss */
+    /* line 33, ../sass/_theme.scss */
     .views-field-title a:hover {
       color: #333333; }
 
-/* line 201, ../sass/main.scss */
+/* line 39, ../sass/_theme.scss */
 .views-row {
   margin-bottom: 80px; }
 
-/* line 205, ../sass/main.scss */
+/* line 43, ../sass/_theme.scss */
 .views-view-grid img {
   border: 2px solid #cc6600; }
 
-/** Import Media **/
+/** Content **/
+/* line 49, ../sass/_theme.scss */
+.content .node {
+  margin-bottom: 50px; }
+
+/** Modules **/
+/* line 55, ../sass/_theme.scss */
+.views-field-field-post-dates {
+  float: right;
+  font-family: "Crimson Text", serif;
+  color: #cc6600;
+  clear: both; }
+
+/* line 62, ../sass/_theme.scss */
+.field-name-field-post-dates {
+  color: #cc6600;
+  margin: 10px 0px 20px 0px; }
+
+/** Fonts & Colors **/
+/** Variables **/
 @media (min-width: 240px) and (max-width: 500px) and (orientation: portrait) {
-  /* line 8, ../sass/_media.scss */
+  /* line 7, ../sass/_media.scss */
   #site-info {
     float: none;
     text-align: center; }
 
-  /* line 13, ../sass/_media.scss */
+  /* line 12, ../sass/_media.scss */
   #logo {
     float: none;
     padding-left: 22%; }
 
-  /* line 18, ../sass/_media.scss */
+  /* line 17, ../sass/_media.scss */
   #page .content {
     padding-left: 10px;
     padding-right: 10px; } }
 @media (max-width: 700px) and (orientation: landscape) {
-  /* line 27, ../sass/_media.scss */
+  /* line 26, ../sass/_media.scss */
   #page .content, header {
     padding-left: 10px;
     padding-right: 10px; } }
