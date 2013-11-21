@@ -36,6 +36,10 @@
 	}
 }
 
+.views-field-body, .field-name-body {
+	margin-bottom: 10px;
+}
+
 .views-row {
 	margin-bottom: 80px;
 }
@@ -56,7 +60,6 @@
 	float:right;
 	font-family: $crimson;
     color: $orange;
-    clear:both;
 }
 
 .field-name-field-post-dates {

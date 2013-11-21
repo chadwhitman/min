@@ -1,11 +1,13 @@
 name = Min
-description = Minimal Blog Theme
+description = Minimalist Zen Sub-theme
 core = 7.x
+screenshot = screenshot.png
 
 ; stylesheets
 stylesheets[all][] = css/main.css
 
 ;Scripts
+scripts[] = scripts.js
 
 
 ; Regions

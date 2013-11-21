@@ -211,27 +211,30 @@ header {
       color: #333333; }
 
 /* line 39, ../sass/_theme.scss */
+.views-field-body, .field-name-body {
+  margin-bottom: 10px; }
+
+/* line 43, ../sass/_theme.scss */
 .views-row {
   margin-bottom: 80px; }
 
-/* line 43, ../sass/_theme.scss */
+/* line 47, ../sass/_theme.scss */
 .views-view-grid img {
   border: 2px solid #cc6600; }
 
 /** Content **/
-/* line 49, ../sass/_theme.scss */
+/* line 53, ../sass/_theme.scss */
 .content .node {
   margin-bottom: 50px; }
 
 /** Modules **/
-/* line 55, ../sass/_theme.scss */
+/* line 59, ../sass/_theme.scss */
 .views-field-field-post-dates {
   float: right;
   font-family: "Crimson Text", serif;
-  color: #cc6600;
-  clear: both; }
+  color: #cc6600; }
 
-/* line 62, ../sass/_theme.scss */
+/* line 65, ../sass/_theme.scss */
 .field-name-field-post-dates {
   color: #cc6600;
   margin: 10px 0px 20px 0px; }
