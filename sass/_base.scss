@@ -1,115 +1,35 @@
-/** Global Styles **/
-
-/** Colors **/
-
-$orange: #CC6600;
-$grey: #333;
-
-/** Fonts **/
-
-$crimson: 'Crimson Text', serif;
-$neuton: 'Coda', cursive;
-
-
-/** Images **/
-
 img {
-	max-width: 500px;
+	max-width: 100%;
 	height: auto;
 }
 
+/* LOGO */
 
-/** Links **/
-
-a {
-	text-decoration:none;
-	color: $orange;
-	&:hover {
-		color: $grey;
-	}
-}
-
-/** Paragraphs **/
-
-p {
-	font-size: 25px;
-	line-height: 37px;
-	font-family: $crimson;
-	color: $grey;
-	&:first-letter {
-		font-size: 40px;
-		font-weight: 700;
-	}
-}
-
-/** Lists **/
-
-
-ul.inline li {
-	padding: 0px 20px 0px 0px;
-}
-
-.pager li {
-	a {
-		font-family: $crimson;
-		text-transform: uppercase;
-	}
-}
-
-ul#main-menu {
-	font-family: $crimson;
-	color: $grey;
-	font-size: 0.8em;
-	li {
-
-		padding: 0px 10px 0px 0px;
-		a {
-			color: $grey;
-			&:hover {
-				color: $orange;
-			}
+#logo  {
+	float: right;
+	padding-top: 22px;
+	padding-right: 10px;
+	img {
+		width: 75px;
+		height: 75px;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		background: url(http://link-to-your/image.jpg) no-repeat;
+		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-webkit-filter: grayscale(0%);
+		-moz-filter: grayscale(0%);
+		filter: grayscale(0%);
+		&:hover {
+		-webkit-filter: grayscale(0%);
+		-moz-filter: grayscale(0%);
+		filter: grayscale(0%);
 		}
 	}
 }
 
-/** Header Styles **/
-
-h2 {
-	margin-top: 0px;
-	font-size: 1.3em;
-	line-height: 100%;
-	text-transform: uppercase;
-	font-family: $neuton;
-	color: $orange;
-	#site-slogan {
-	    font-family: $crimson;
-		font-size: 1.0em;
-	    color: $grey;
-	    margin-top: 0px;
-	}
+a.link {
+	display: none !important;
 }
-
-h1 {
-	&#page-title {
-		margin-top: 0px;
-		font-size: 2.6em;
-		line-height: 100%;
-		text-align:center;
-		text-transform: uppercase;
-		font-family: $neuton;
-		color: $orange;
-		clear:both;
-	}
-
-	&#site-name {
-		margin-bottom: 0px;
-		font-family: $crimson;
-		font-weight: 700;
-		font-size: 2.8em;
-		a {
-			color: $grey;
-		}
-
-	}
-}
-

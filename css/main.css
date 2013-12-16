@@ -1,162 +1,75 @@
-/** Main Sass File **/
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* line 6, ../sass/_reset.scss */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+/** Variables **/
+/** Colors **/
+/** Mixins **/
+/** Import **/
+/* line 17, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
-/* line 17, ../sass/_reset.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-/* line 21, ../sass/_reset.scss */
-body {
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1; }
 
-/* line 25, ../sass/_reset.scss */
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 29, ../sass/_reset.scss */
-blockquote, q {
-  quotes: none; }
-
-/* line 34, ../sass/_reset.scss */
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
-/* line 41, ../sass/_reset.scss */
-q:before, q:after {
-  content: '';
-  content: none; }
-
-/* line 47, ../sass/_reset.scss */
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/** Global Styles **/
-/** Colors **/
-/** Fonts **/
-/** Images **/
-/* line 16, ../sass/_base.scss */
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 1, ../sass/_base.scss */
 img {
-  max-width: 500px;
+  max-width: 100%;
   height: auto; }
 
-/** Links **/
-/* line 24, ../sass/_base.scss */
-a {
-  text-decoration: none;
-  color: #cc6600; }
-  /* line 27, ../sass/_base.scss */
-  a:hover {
-    color: #333333; }
-
-/** Paragraphs **/
-/* line 34, ../sass/_base.scss */
-p {
-  font-size: 25px;
-  line-height: 37px;
-  font-family: "Crimson Text", serif;
-  color: #333333; }
-  /* line 39, ../sass/_base.scss */
-  p:first-letter {
-    font-size: 40px;
-    font-weight: 700; }
-
-/** Lists **/
-/* line 48, ../sass/_base.scss */
-ul.inline li {
-  padding: 0px 20px 0px 0px; }
-
-/* line 53, ../sass/_base.scss */
-.pager li a {
-  font-family: "Crimson Text", serif;
-  text-transform: uppercase; }
-
-/* line 59, ../sass/_base.scss */
-ul#main-menu {
-  font-family: "Crimson Text", serif;
-  color: #333333;
-  font-size: 0.8em; }
-  /* line 63, ../sass/_base.scss */
-  ul#main-menu li {
-    padding: 0px 10px 0px 0px; }
-    /* line 66, ../sass/_base.scss */
-    ul#main-menu li a {
-      color: #333333; }
-      /* line 68, ../sass/_base.scss */
-      ul#main-menu li a:hover {
-        color: #cc6600; }
-
-/** Header Styles **/
-/* line 77, ../sass/_base.scss */
-h2 {
-  margin-top: 0px;
-  font-size: 1.3em;
-  line-height: 100%;
-  text-transform: uppercase;
-  font-family: "Coda", cursive;
-  color: #cc6600; }
-  /* line 84, ../sass/_base.scss */
-  h2 #site-slogan {
-    font-family: "Crimson Text", serif;
-    font-size: 1.0em;
-    color: #333333;
-    margin-top: 0px; }
-
-/* line 93, ../sass/_base.scss */
-h1#page-title {
-  margin-top: 0px;
-  font-size: 2.6em;
-  line-height: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Coda", cursive;
-  color: #cc6600;
-  clear: both; }
-/* line 104, ../sass/_base.scss */
-h1#site-name {
-  margin-bottom: 0px;
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-size: 2.8em; }
-  /* line 109, ../sass/_base.scss */
-  h1#site-name a {
-    color: #333333; }
-
-/** Layout **/
-/* line 3, ../sass/_layout.scss */
-body {
-  max-width: 700px;
-  margin: 0 auto; }
-
-/* line 8, ../sass/_layout.scss */
-header {
-  margin-bottom: 30px; }
-
-/* line 12, ../sass/_layout.scss */
-#site-info {
-  float: left;
-  padding-top: 40px; }
-
-/** LOGO **/
-/* line 18, ../sass/_layout.scss */
+/* LOGO */
+/* line 8, ../sass/_base.scss */
 #logo {
   float: right;
   padding-top: 22px;
   padding-right: 10px; }
-  /* line 22, ../sass/_layout.scss */
+  /* line 12, ../sass/_base.scss */
   #logo img {
     width: 75px;
     height: 75px;
@@ -167,97 +80,229 @@ header {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%); }
-    /* line 35, ../sass/_layout.scss */
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%); }
+    /* line 25, ../sass/_base.scss */
     #logo img:hover {
       -webkit-filter: grayscale(0%);
       -moz-filter: grayscale(0%);
       filter: grayscale(0%); }
 
-/** Drupal Theme Styles **/
-/** Admin **/
-/* line 6, ../sass/_theme.scss */
+/* line 33, ../sass/_base.scss */
+a.link {
+  display: none !important; }
+
+/* Content Styles */
+/* line 3, ../sass/_content.scss */
+a {
+  text-decoration: none;
+  color: #cc6600; }
+  /* line 6, ../sass/_content.scss */
+  a:hover {
+    color: #333333; }
+
+/* line 11, ../sass/_content.scss */
+ul.inline li {
+  padding: 0px 20px 0px 0px; }
+
+/* line 16, ../sass/_content.scss */
+.pager li a {
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase; }
+
+/* line 22, ../sass/_content.scss */
+p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-family: "Crimson Text", serif;
+  color: #333333; }
+
+/* Headers */
+/* line 32, ../sass/_content.scss */
+header {
+  margin-bottom: 30px; }
+
+/* line 37, ../sass/_content.scss */
+h1#page-title {
+  margin-top: 0px;
+  font-size: 2.6em;
+  line-height: 100%;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  color: #cc6600;
+  clear: both;
+  text-shadow: 2px 2px 2px #333; }
+/* line 50, ../sass/_content.scss */
+h1#site-name {
+  margin-bottom: 0px;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-size: 2.8em; }
+  /* line 55, ../sass/_content.scss */
+  h1#site-name a {
+    color: #333333; }
+
+/* line 61, ../sass/_content.scss */
+h2 {
+  margin-top: 0px;
+  font-size: 1.3em;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  color: #cc6600; }
+  /* line 68, ../sass/_content.scss */
+  h2 #site-slogan {
+    font-family: "Crimson Text", serif;
+    font-size: 1.0em;
+    color: #333333;
+    margin-top: 0px; }
+
+/* line 76, ../sass/_content.scss */
+h3 {
+  margin-top: 0px;
+  font-size: 1.5em;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  color: #333;
+  margin-bottom: 15px;
+  text-decoration: underline; }
+
+/* line 87, ../sass/_content.scss */
+h4 {
+  color: #fff;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 0px; }
+
+/* line 93, ../sass/_content.scss */
+#credits p {
+  font-size: 15px; }
+
+/* Layout */
+/* line 3, ../sass/_layout.scss */
+body {
+  max-width: 765px;
+  margin: 0 auto;
+  font-size: 100%;
+  min-height: 800px; }
+
+/** Header Styles **/
+/* line 12, ../sass/_layout.scss */
+ul#main-menu {
+  font-family: "Crimson Text", serif;
+  color: #333333;
+  font-size: 0.8em; }
+  /* line 16, ../sass/_layout.scss */
+  ul#main-menu li {
+    padding: 0px 10px 0px 0px; }
+    /* line 18, ../sass/_layout.scss */
+    ul#main-menu li a {
+      color: #333333; }
+      /* line 20, ../sass/_layout.scss */
+      ul#main-menu li a:hover {
+        color: #cc6600; }
+
+/* line 27, ../sass/_layout.scss */
+#site-info {
+  float: left;
+  padding-top: 40px; }
+
+/* line 32, ../sass/_layout.scss */
+tr {
+  display: block; }
+
+/* line 36, ../sass/_layout.scss */
+#node-9 p {
+  margin-bottom: 20px; }
+
+/* line 2, ../sass/_theme.scss */
+.target-row {
+  -moz-box-shadow: 4px 4px 5px #989898;
+  -webkit-box-shadow: 4px 4px 5px #989898;
+  box-shadow: 4px 4px 5px #989898;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 35px;
+  margin-bottom: 35px; }
+  /* line 9, ../sass/_theme.scss */
+  .target-row img {
+    max-width: 100%;
+    height: 150px; }
+
+/* line 15, ../sass/_theme.scss */
+.info-wrap {
+  position: absolute;
+  color: #ccc;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  font-family: "Crimson Text", serif;
+  background-color: rgba(37, 37, 37, 0.9); }
+
+/* line 26, ../sass/_theme.scss */
+.tt {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 5px; }
+
+/* line 32, ../sass/_theme.scss */
+.work {
+  text-align: center;
+  font-size: 14px; }
+  /* line 36, ../sass/_theme.scss */
+  .work a:hover {
+    color: #cc6600;
+    text-decoration: underline; }
+  /* line 41, ../sass/_theme.scss */
+  .work p {
+    color: #fff; }
+
+/* Admin Styles */
+/* line 48, ../sass/_theme.scss */
 .submitted {
   display: none; }
 
-/** Views **/
-/* line 12, ../sass/_theme.scss */
-.views-field-field-post-tags {
-  font-family: "Crimson Text", serif;
-  float: left; }
-  /* line 15, ../sass/_theme.scss */
-  .views-field-field-post-tags a {
-    color: #cc6600; }
-    /* line 17, ../sass/_theme.scss */
-    .views-field-field-post-tags a:hover {
-      text-decoration: underline; }
+/* line 52, ../sass/_theme.scss */
+.show {
+  height: 50%;
+  background-color: rgba(37, 37, 37, 0.9); }
 
-/* line 23, ../sass/_theme.scss */
-.views-field-title {
-  font-size: 2.6em;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Coda", cursive;
-  color: #cc6600;
-  clear: both; }
-  /* line 30, ../sass/_theme.scss */
-  .views-field-title a {
-    font-family: "Coda", cursive;
-    color: #cc6600; }
-    /* line 33, ../sass/_theme.scss */
-    .views-field-title a:hover {
-      color: #333333; }
-
-/* line 39, ../sass/_theme.scss */
-.views-field-body, .field-name-body {
-  margin-bottom: 10px; }
-
-/* line 43, ../sass/_theme.scss */
-.views-row {
-  margin-bottom: 80px; }
-
-/* line 47, ../sass/_theme.scss */
-.views-view-grid img {
-  border: 2px solid #cc6600; }
-
-/** Content **/
-/* line 53, ../sass/_theme.scss */
-.content .node {
-  margin-bottom: 50px; }
-
-/** Modules **/
-/* line 59, ../sass/_theme.scss */
-.views-field-field-post-dates {
-  float: right;
-  font-family: "Crimson Text", serif;
-  color: #cc6600; }
-
-/* line 65, ../sass/_theme.scss */
-.field-name-field-post-dates {
-  color: #cc6600;
-  margin: 10px 0px 20px 0px; }
-
-/** Fonts & Colors **/
-/** Media Queries **/
-@media (min-width: 240px) and (max-width: 500px) and (orientation: portrait) {
-  /* line 11, ../sass/_media.scss */
+@media (min-width: 240px) and (max-width: 480px) {
+  /* line 7, ../sass/_media.scss */
   #site-info {
     float: none;
-    text-align: center; }
+    text-align: center;
+    padding-top: 15px; }
 
-  /* line 16, ../sass/_media.scss */
+  /* line 13, ../sass/_media.scss */
+  h1#site-name {
+    padding-bottom: 15px; }
+
+  /* line 17, ../sass/_media.scss */
   #logo {
     float: none;
     padding-left: 22%; }
 
-  /* line 21, ../sass/_media.scss */
+  /* line 22, ../sass/_media.scss */
   #page .content {
     padding-left: 10px;
-    padding-right: 10px; } }
-@media (max-width: 700px) and (orientation: landscape) {
-  /* line 30, ../sass/_media.scss */
+    padding-right: 10px; }
+
+  /* line 27, ../sass/_media.scss */
+  .region-content {
+    padding-left: 0px; } }
+@media (max-width: 768px) {
+  /* line 35, ../sass/_media.scss */
   #page .content, header {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  /* line 40, ../sass/_media.scss */
+  .region-content {
+    padding-left: 12%; } }

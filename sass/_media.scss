@@ -1,16 +1,17 @@
-/** Media Queries **/
-
 $width-small: 240px;
-$width-medium: 500px;
-$width-large: 700px;
-$p: portrait;
-$l: landscape;
+$width-medium: 480px;
+$width-large: 768px;
 
-@media (min-width: $width-small) and (max-width: $width-medium) and (orientation: $p) {
+@media (min-width: $width-small) and (max-width: $width-medium) {
 
 	#site-info {
 		float: none;
 		text-align: center;
+		padding-top: 15px;
+	}
+	
+	h1#site-name {
+		padding-bottom: 15px;
 	}
 
 	#logo {
@@ -22,14 +23,22 @@ $l: landscape;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
+	
+	.region-content {
+		padding-left: 0px;
+	}
+	
 }
 
-@media (max-width: $width-large) and (orientation: $l) {
+@media (max-width: $width-large) {
 
 	#page .content, header {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
+	
+	.region-content {
+		padding-left: 12%;
+	}
+	
 }
