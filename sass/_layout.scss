@@ -7,6 +7,10 @@ body {
 	min-height: 800px;
 }
 
+tr {
+	display:block;
+}
+
 /** Header Styles **/
 
 ul#main-menu {
@@ -27,12 +31,4 @@ ul#main-menu {
 #site-info {
 	float: left;
 	padding-top: 40px;
-}
-
-tr {
-	display:block;
-}
-
-#node-9 p {
-	margin-bottom: 20px;
 }

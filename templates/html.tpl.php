@@ -20,7 +20,6 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <link href='http://fonts.googleapis.com/css?family=Coda:800' rel='stylesheet' type='text/css'>
-
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
 
 

@@ -15,15 +15,15 @@ $grey: #333;
        -o-border-radius: $radius;
           border-radius: $radius;
  }
- 
+
 @mixin box-shadow {
   -moz-box-shadow:    4px 4px 5px #989898;
   -webkit-box-shadow: 4px 4px 5px #989898;
   box-shadow:         4px 4px 5px #989898;
-	
-	
+
+
 }
-          
+
 /** Import **/
 
 @import "compass/reset";

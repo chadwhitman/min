@@ -9,7 +9,7 @@ $width-large: 768px;
 		text-align: center;
 		padding-top: 15px;
 	}
-	
+
 	h1#site-name {
 		padding-bottom: 15px;
 	}
@@ -23,11 +23,11 @@ $width-large: 768px;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	
+
 	.region-content {
 		padding-left: 0px;
 	}
-	
+
 }
 
 @media (max-width: $width-large) {
@@ -36,9 +36,9 @@ $width-large: 768px;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	
+
 	.region-content {
 		padding-left: 12%;
 	}
-	
+
 }

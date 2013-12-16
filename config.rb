@@ -8,7 +8,7 @@ images_dir      = "images"
 javascripts_dir = "js"
 
 # Production or Develoment Enviroment
-environment = :development
+environment = :production
 
 # Sass Comments
 line_comments = false
