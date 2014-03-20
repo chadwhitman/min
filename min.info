@@ -4,7 +4,7 @@ core = 7.x
 screenshot = screenshot.png
 
 ; stylesheets
-stylesheets[all][] = css/main.css
+stylesheets[all][] = css/all.css
 
 ;Scripts
 scripts[] = scripts.js
