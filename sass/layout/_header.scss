@@ -1,17 +1,8 @@
-/* Layout */
-
-body {
-	max-width: 765px;
-	margin: 0 auto;
-	font-size: 100%;
-	min-height: 800px;
-}
-
-tr {
-	display:block;
-}
-
 /** Header Styles **/
+
+header {
+	margin-bottom:30px;
+}
 
 ul#main-menu {
 	font-family: $crimson;
@@ -21,6 +12,7 @@ ul#main-menu {
 		padding: 0px 10px 0px 0px;
 		a {
 			color: $grey;
+			font-weight: normal;
 			&:hover {
 				color: $orange;
 			}
@@ -30,5 +22,5 @@ ul#main-menu {
 
 #site-info {
 	float: left;
-	padding-top: 40px;
+	padding-top: 10px;
 }

@@ -1,7 +1,18 @@
-/*
- * Content Styles
- * 
- */
+/* Paragraph Text */
+
+p {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 10px;
+	font-family: $crimson;
+	color: $grey;
+}
+
+p:first-letter {
+	font-size: 50px;
+}
+
+/* Links */
 
 a {
 	text-decoration:none;
@@ -11,34 +22,7 @@ a {
 	}
 }
 
-ul.inline li {
-	padding: 0px 20px 0px 0px;
-}
-
-.pager li {
-	a {
-		font-family: $crimson;
-		text-transform: uppercase;
-	}
-}
-
-p {
-	font-size: 20px;
-	line-height: 24px;
-	margin-bottom: 10px;
-	font-family: $crimson;
-	color: $grey;
-}
-
-#node-9 p {
-	margin-bottom: 20px;
-}
-
 /* Headers */
-
-header {
-	margin-bottom:30px;
-}
 
 h1 {
 	&#page-title {
@@ -59,6 +43,8 @@ h1 {
 		font-family: $crimson;
 		font-weight: 700;
 		font-size: 2.8em;
+		line-height: 40px;
+		margin-top: 40px;
 		a {
 			color: $grey;
 		}
@@ -97,6 +83,20 @@ h4 {
     margin-bottom: 0px;
 }
 
-#credits p {
-	font-size:15px;
+/** Title of Each post **/
+
+.views-field-title {
+	margin-top: 0px;
+	font-size: 2.6em;
+	line-height: 100%;
+	margin-bottom: 25px;
+	text-align:center;
+	text-transform: uppercase;
+	font-family: $neuton;
+	color: $orange;
+	clear:both;
+	text-shadow: 2px 2px 2px #333;
+	a:hover {
+		text-decoration: underline;
+	}
 }

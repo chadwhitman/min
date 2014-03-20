@@ -1,37 +1,42 @@
-/** Variables **/
-$crimson: 'Crimson Text', serif;
-$neuton: 'Lato', sans-serif;
+// Sass utilities
+@import "helpers/functions";
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
 
-/** Colors **/
-$orange: #CC6600;
-$grey: #333;
+// Base stuff
+@import "base/reset";
+@import "base/typography";
 
-/** Mixins **/
+// Layout related stylesheets
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/tables";
+@import 'layout/posts';
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-       -o-border-radius: $radius;
-          border-radius: $radius;
- }
+// Components and modules
+@import "components/carousel";
+@import "components/buttons";
+@import "components/cover";
+@import "components/dropdown";
+@import "components/images";
+@import "components/navigation";
 
-@mixin box-shadow {
-  -moz-box-shadow:    4px 4px 5px #989898;
-  -webkit-box-shadow: 4px 4px 5px #989898;
-  box-shadow:         4px 4px 5px #989898;
+// Page-specific stylesheets
+@import "pages/home";
+@import "pages/general";
+
+// Themes
+@import "themes/theme";
+@import "themes/admin";
+
+// Media Queries
+@import 'layout/media';
 
 
-}
 
-/** Import **/
-
-@import "compass/reset";
-@import 'base';
-@import 'content';
-@import 'layout';
-@import 'theme';
-@import 'media';
 
 
 
