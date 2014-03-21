@@ -16,7 +16,7 @@ Click the 'Enable and set default' link for Min.
 
 VENDORS USED
 
-HTML5 Boilerplate, Modernizr.js, jQuery, Normalize CSS
+HTML5 Boilerplate, Modernizr.js, jQuery 1.10.2, Normalize CSS
 
 MODULES USED (not included in a basic D7 installation) TO CREATE DEMO:
 
