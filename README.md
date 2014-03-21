@@ -2,7 +2,7 @@ Min Theme: A minimalist blog theme for Drupal 7
 
 --------------------------------------------
 
-Min is a light, responsive, single-column layout theme.
+Min is a light, responsive, single-column theme.
 
 INSTALLING MIN
 
