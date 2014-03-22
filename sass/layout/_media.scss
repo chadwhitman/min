@@ -1,23 +1,34 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
 $width-small: 240px;
 $width-medium: 480px;
 $width-large: 768px;
 
 @media (min-width: $width-small) and (max-width: $width-medium) {
 
+
+	p {
+		font-size: 22px;
+		line-height: 27px;
+		padding: 0px 15px 0px 15px;
+	}
+	
+	.views-field-title, .view h2 {
+		font-size: 2.4em;
+	}
+	
 	#site-info {
 		float: none;
 		text-align: center;
 		padding-top: 15px;
 	}
 
-	h1#site-name {
+	#site-name {
 		padding-bottom: 15px;
 		margin-top: 0px;
 		line-height: 20px;
-	}
-
-	header {
-		margin-bottom: 5px;
 	}
 
 	#logo {
@@ -25,7 +36,7 @@ $width-large: 768px;
 		padding-left: 22%;
 	}
 
-	#page .content {
+	.content {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -34,14 +45,8 @@ $width-large: 768px;
 		padding-left: 0px;
 	}
 
-	.views-field-title {
-		font-size: 2.4em;
-	}
-
-	p {
-		font-size: 22px;
-		line-height: 27px;
-		padding: 0px 15px 0px 15px;
+	header {
+		margin-bottom: 5px;
 	}
 }
 

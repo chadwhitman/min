@@ -1,10 +1,14 @@
+/* ==========================================================================
+   Image Styles
+   ========================================================================== */
+
+/* General */
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-/* LOGO */
-
+/* Portrait/Logo Style */
 #logo  {
 	float: right;
 	padding-top: 22px;
@@ -15,7 +19,6 @@ img {
 		border-radius: 150px;
 		-webkit-border-radius: 150px;
 		-moz-border-radius: 150px;
-		background: url(http://link-to-your/image.jpg) no-repeat;
 		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 		-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -23,9 +26,9 @@ img {
 		-moz-filter: grayscale(0%);
 		filter: grayscale(0%);
 		&:hover {
-		-webkit-filter: grayscale(100%);
-		-moz-filter: grayscale(100%);
-		filter: grayscale(100%);
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			filter: grayscale(100%);
 		}
 	}
 }

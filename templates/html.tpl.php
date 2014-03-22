@@ -18,6 +18,8 @@
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Coda:800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet' type='text/css'>
+
 
         <script src="http://localhost:8888/min/sites/all/themes/min/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -37,6 +39,7 @@
         <script src="http://localhost:8888/min/sites/all/themes/min/js/plugins.js"></script>
         <script src="http://localhost:8888/min/sites/all/themes/min/js/main.js"></script>
         <?php print $scripts; ?>
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

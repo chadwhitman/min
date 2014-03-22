@@ -1,5 +1,10 @@
 /* ==========================================================================
-   Reset
+   Global Page Styles
    ========================================================================== */
 
-/** This theme uses Normalize.css. You can find it in the CSS folder **/
+body {
+	max-width: 765px;
+	margin: 0 auto;
+}
+
+

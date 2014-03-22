@@ -1,127 +1,132 @@
-/** Variables **/
+/* ==========================================================================
+   Variables
+   ========================================================================== */
 /** Fonts **/
 /** Colors **/
-/** Mixins **/
-/* Paragraph Text */
+/** Text Shadow **/
+/** Text Decoration **/
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+/** This theme uses Normalize.css. You can find it in the CSS folder **/
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/** Paragraphs and Links **/
 p {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 10px;
   font-family: "Crimson Text", serif;
   color: #333333; }
+  p a:hover {
+    text-decoration: underline; }
 
 p:first-letter {
-  font-size: 50px; }
+  font-size: 50px;
+  font-family: "MedievalSharp", cursive; }
 
 /* Links */
 a {
   text-decoration: none;
   color: #cc6600; }
-  a:hover {
-    color: #333333; }
 
-/* Headers */
-h1#page-title {
+/* ==========================================================================
+   Headers
+   ========================================================================== */
+/** All Headings **/
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
-  font-size: 2.6em;
-  line-height: 100%;
-  margin-bottom: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: #cc6600;
-  clear: both;
-  text-shadow: 2px 2px 2px #333; }
-h1#site-name {
-  margin-bottom: 0px;
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-size: 2.8em;
-  line-height: 40px;
-  margin-top: 40px; }
-  h1#site-name a {
-    color: #333333; }
+  line-height: 100%; }
+
+/** Headings 2, 3 **/
+h2, h3 {
+  font-family: "Lato", sans-serif; }
 
 h2 {
-  margin-top: 0px;
   font-size: 1.3em;
-  line-height: 100%;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: #cc6600; }
-  h2 #site-slogan {
-    font-family: "Crimson Text", serif;
-    font-size: 1.0em;
-    color: #333333;
-    margin-top: 0px; }
+  color: #cc6600;
+  text-transform: uppercase; }
 
 h3 {
-  margin-top: 0px;
-  font-size: 1.5em;
-  line-height: 100%;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: #333;
+  color: #333333;
   margin-bottom: 15px;
-  text-decoration: underline; }
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  font-size: 2.4em; }
 
 h4 {
   color: #fff;
   font-family: "Crimson Text", serif;
   margin-bottom: 0px; }
 
-/** Title of Each post **/
-.views-field-title {
+/** Main Titles **/
+.views-field-title, .view h2, #page-title {
+  text-shadow: 2px 2px 2px #333333;
+  text-align: center;
+  text-transform: uppercase;
   margin-top: 0px;
   font-size: 2.6em;
   line-height: 100%;
   margin-bottom: 25px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Lato", sans-serif;
   color: #cc6600;
-  clear: both;
-  text-shadow: 2px 2px 2px #333; }
-  .views-field-title a:hover {
-    text-decoration: underline; }
+  clear: both; }
+  .views-field-title a:hover, .view h2 a:hover, #page-title a:hover {
+    color: #333333; }
 
-body {
-  max-width: 765px;
-  margin: 0 auto;
-  font-size: 100%;
-  min-height: 800px; }
+#site-name {
+  margin-bottom: 0px;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-size: 2.8em;
+  line-height: 45px;
+  margin-top: 40px; }
+  #site-name a {
+    color: #333333; }
+    #site-name a:hover {
+      color: #cc6600; }
 
-/** Header Styles **/
+/* ==========================================================================
+   Header Styles
+   ========================================================================== */
 header {
   margin-bottom: 30px; }
-
-ul#main-menu {
-  font-family: "Crimson Text", serif;
-  color: #333333;
-  font-size: 0.8em; }
-  ul#main-menu li {
-    padding: 0px 10px 0px 0px; }
-    ul#main-menu li a {
-      color: #333333;
-      font-weight: normal; }
-      ul#main-menu li a:hover {
-        color: #cc6600; }
 
 #site-info {
   float: left;
   padding-top: 10px; }
 
-tr {
-  display: block; }
-
-#main-wrapper .views-field-body {
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+.views-field-body, .field-name-body {
   margin-bottom: 5%; }
 
+blockquote {
+  background-color: #fff7eb;
+  padding: 5px 20px 20px 20px; }
+
+/* ==========================================================================
+   Global Page Styles
+   ========================================================================== */
+body {
+  max-width: 765px;
+  margin: 0 auto; }
+
+/* ==========================================================================
+   Image Styles
+   ========================================================================== */
+/* General */
 img {
   max-width: 100%;
   height: auto; }
 
-/* LOGO */
+/* Portrait/Logo Style */
 #logo {
   float: right;
   padding-top: 22px;
@@ -132,7 +137,6 @@ img {
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    background: url(http://link-to-your/image.jpg) no-repeat;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
@@ -144,46 +148,87 @@ img {
       -moz-filter: grayscale(100%);
       filter: grayscale(100%); }
 
-/* Admin Styles */
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+#main-menu {
+  font-family: "Crimson Text", serif;
+  color: #333333; }
+  #main-menu li {
+    padding: 0px 10px 0px 0px; }
+    #main-menu li a {
+      font-size: .9em;
+      color: #333333;
+      font-weight: normal; }
+      #main-menu li a:hover {
+        color: #cc6600; }
+
+/* ==========================================================================
+   Comment Styles
+   ========================================================================== */
+#comments h2 {
+  text-align: center;
+  font-size: 1.8em; }
+
+#comments h3 a:hover {
+  text-decoration: underline; }
+
+.comment-add {
+  text-decoration: underline; }
+
+.view .comment-add {
+  display: none; }
+
+.comment {
+  margin-bottom: 6%; }
+  .comment p {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+/* ==========================================================================
+   Drupal Styles
+   ========================================================================== */
+/* ==========================================================================
+   Admin Theme Styles
+   ========================================================================== */
 .submitted {
   display: none; }
 
-.show {
-  height: 50%;
-  background-color: rgba(37, 37, 37, 0.9); }
-
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 @media (min-width: 240px) and (max-width: 480px) {
+  p {
+    font-size: 22px;
+    line-height: 27px;
+    padding: 0px 15px 0px 15px; }
+
+  .views-field-title, .view h2 {
+    font-size: 2.4em; }
+
   #site-info {
     float: none;
     text-align: center;
     padding-top: 15px; }
 
-  h1#site-name {
+  #site-name {
     padding-bottom: 15px;
     margin-top: 0px;
     line-height: 20px; }
-
-  header {
-    margin-bottom: 5px; }
 
   #logo {
     float: none;
     padding-left: 22%; }
 
-  #page .content {
+  .content {
     padding-left: 10px;
     padding-right: 10px; }
 
   .region-content {
     padding-left: 0px; }
 
-  .views-field-title {
-    font-size: 2.4em; }
-
-  p {
-    font-size: 22px;
-    line-height: 27px;
-    padding: 0px 15px 0px 15px; } }
+  header {
+    margin-bottom: 5px; } }
 @media (max-width: 768px) {
   #page .content, header {
     padding-left: 10px;

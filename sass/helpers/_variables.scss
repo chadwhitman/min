@@ -1,9 +1,19 @@
-/** Variables **/
+/* ==========================================================================
+   Variables
+   ========================================================================== */
 
 /** Fonts **/
 $crimson: 'Crimson Text', serif;
-$neuton: 'Lato', sans-serif;
+$lato: 'Lato', sans-serif;
+$medieval: 'MedievalSharp', cursive;
 
 /** Colors **/
 $orange: #CC6600;
 $grey: #333;
+
+/** Text Shadow **/
+$shadow: 2px 2px 2px #333; 
+
+/** Text Decoration **/
+$line: underline;
+$up: uppercase;

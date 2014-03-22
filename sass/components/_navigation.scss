@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+
+#main-menu {
+	font-family: $crimson;
+	color: $grey;
+	li {
+		padding: 0px 10px 0px 0px;
+		a {
+			font-size: .9em;
+			color: $grey;
+			font-weight: normal;
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+}
