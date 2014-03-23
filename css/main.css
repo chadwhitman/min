@@ -75,7 +75,8 @@ h4 {
   margin-bottom: 25px;
   font-family: "Lato", sans-serif;
   color: #cc6600;
-  clear: both; }
+  clear: both;
+  font-weight: normal; }
   .views-field-title a:hover, .view h2 a:hover, #page-title a:hover {
     color: #333333; }
 
@@ -117,6 +118,16 @@ blockquote {
 body {
   max-width: 765px;
   margin: 0 auto; }
+
+.pager-current {
+  color: #333333;
+  font-size: 0.8em; }
+
+li[class^='pager-'] {
+  text-transform: uppercase;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 0.8em; }
 
 /* ==========================================================================
    Image Styles
@@ -172,9 +183,9 @@ img {
 #comments h3 a:hover {
   text-decoration: underline; }
 
-comment {
+.comment {
   margin-bottom: 6%; }
-  comment p {
+  .comment p {
     padding-left: 20px;
     padding-right: 20px; }
 
@@ -190,7 +201,7 @@ comment {
 /* ==========================================================================
    Admin Theme Styles
    ========================================================================== */
-.submitted {
+.submitted, #block-system-main .comment_forbidden {
   display: none; }
 
 /* ==========================================================================
@@ -214,6 +225,10 @@ comment {
     padding-bottom: 15px;
     margin-top: 0px;
     line-height: 20px; }
+
+  #page-title {
+    font-size: 2.4em;
+    margin-bottom: 0px; }
 
   #logo {
     float: none;
