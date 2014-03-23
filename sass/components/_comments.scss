@@ -17,6 +17,10 @@
 	p {
 		padding-left: 20px;
 		padding-right: 20px;
+		&:first-letter {
+			font-weight: normal;
+			font-size: 1.0em;
+		}
 	}
 }
 

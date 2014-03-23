@@ -26,8 +26,9 @@ p {
     text-decoration: underline; }
 
 p:first-letter {
-  font-size: 50px;
-  font-family: "MedievalSharp", cursive; }
+  font-size: 55px;
+  font-family: "Crimson Text", serif;
+  font-weight: bold; }
 
 /* Links */
 a {
@@ -188,6 +189,9 @@ img {
   .comment p {
     padding-left: 20px;
     padding-right: 20px; }
+    .comment p:first-letter {
+      font-weight: normal;
+      font-size: 1.0em; }
 
 .comment-add {
   text-decoration: underline; }
