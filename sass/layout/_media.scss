@@ -8,7 +8,6 @@ $width-large: 768px;
 
 @media (min-width: $width-small) and (max-width: $width-medium) {
 
-
 	p {
 		font-size: 22px;
 		line-height: 27px;
@@ -31,6 +30,10 @@ $width-large: 768px;
 		line-height: 20px;
 	}
 	
+	#block-system-main {
+		margin-bottom: 50px;
+	}
+	
 	#page-title {
 		font-size: 2.4em;
 		margin-bottom: 0px;
@@ -39,6 +42,7 @@ $width-large: 768px;
 	#logo {
 		float: none;
 		padding-left: 22%;
+		margin-bottom: 20px;
 	}
 
 	.content {
@@ -60,6 +64,10 @@ $width-large: 768px;
 	#page .content, header {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	
+	#block-system-main {
+		margin-bottom: 50px;
 	}
 
 	.region-content {
