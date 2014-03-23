@@ -2,8 +2,9 @@
    Typography
    ========================================================================== */
 
-/** Paragraphs and Links **/
-
+/**
+ * Paragraphs and Links
+ */
 p {
 	font-size: 24px;
 	line-height: 28px;
@@ -21,8 +22,9 @@ p:first-letter {
 	font-weight: bold;
 }
 
-/* Links */
-
+/**
+ * Links
+ */
 a {
 	text-decoration: none;
 	color: $orange;
@@ -32,13 +34,11 @@ a {
    Headers
    ========================================================================== */
 
-/** All Headings **/
 #{headings()} {
 	margin-top: 0px;
 	line-height: 100%;
 }
 
-/** Headings 2, 3 **/
 #{headings(2, 3)} {
 	font-family: $lato;
 }
@@ -55,7 +55,7 @@ h3 {
   text-decoration: none;
   font-weight: normal;
   font-family: $lato;
-  font-size: 2.4em;
+  font-size: 2.0em;
 }
 
 h4 {
@@ -64,8 +64,9 @@ h4 {
     margin-bottom: 0px;
 }
 
-/** Main Titles **/
-
+/**
+ * Page and Post Titles
+ */
 .views-field-title, .view h2, #page-title {
 	text-shadow: $shadow;
 	text-align:center;
@@ -81,6 +82,10 @@ h4 {
 		a:hover {
 			color: $grey;
 		}
+}
+
+#page-title {
+	margin-bottom: 0px;
 }
 
 #site-name {

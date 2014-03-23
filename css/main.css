@@ -1,21 +1,33 @@
 /* ==========================================================================
    Variables
    ========================================================================== */
-/** Fonts **/
-/** Colors **/
-/** Text Shadow **/
-/** Text Decoration **/
+/**
+ * Main Fonts
+ */
+/**
+ * Main Colors
+ */
+/**
+ * Text Shadow
+ */
+/**
+ * Text Decoration
+ */
 /* ==========================================================================
    Mixins
    ========================================================================== */
 /* ==========================================================================
    Reset
    ========================================================================== */
-/** This theme uses Normalize.css. You can find it in the CSS folder **/
+/**
+ * This theme uses Normalize.css. You can find it in the CSS folder
+ */
 /* ==========================================================================
    Typography
    ========================================================================== */
-/** Paragraphs and Links **/
+/**
+ * Paragraphs and Links
+ */
 p {
   font-size: 24px;
   line-height: 28px;
@@ -30,7 +42,9 @@ p:first-letter {
   font-family: "Crimson Text", serif;
   font-weight: bold; }
 
-/* Links */
+/**
+ * Links
+ */
 a {
   text-decoration: none;
   color: #cc6600; }
@@ -38,12 +52,10 @@ a {
 /* ==========================================================================
    Headers
    ========================================================================== */
-/** All Headings **/
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   line-height: 100%; }
 
-/** Headings 2, 3 **/
 h2, h3 {
   font-family: "Lato", sans-serif; }
 
@@ -58,14 +70,16 @@ h3 {
   text-decoration: none;
   font-weight: normal;
   font-family: "Lato", sans-serif;
-  font-size: 2.4em; }
+  font-size: 2.0em; }
 
 h4 {
   color: #fff;
   font-family: "Crimson Text", serif;
   margin-bottom: 0px; }
 
-/** Main Titles **/
+/**
+ * Page and Post Titles
+ */
 .views-field-title, .view h2, #page-title {
   text-shadow: 2px 2px 2px #333333;
   text-align: center;
@@ -80,6 +94,9 @@ h4 {
   font-weight: normal; }
   .views-field-title a:hover, .view h2 a:hover, #page-title a:hover {
     color: #333333; }
+
+#page-title {
+  margin-bottom: 0px; }
 
 #site-name {
   margin-bottom: 0px;
@@ -103,6 +120,9 @@ header {
   float: left;
   padding-top: 10px; }
 
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
 /* ==========================================================================
    Posts
    ========================================================================== */
@@ -133,12 +153,16 @@ li[class^='pager-'] {
 /* ==========================================================================
    Image Styles
    ========================================================================== */
-/* General */
+/**
+ * General
+ */
 img {
   max-width: 100%;
   height: auto; }
 
-/* Portrait/Logo Style */
+/**
+ * Portrait/Logo Style
+ */
 #logo {
   float: right;
   padding-top: 22px;
