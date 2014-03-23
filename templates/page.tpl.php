@@ -13,7 +13,7 @@
         </a>
       <?php endif; ?>
    </div>
-
+   
   <div id="site-info">
       <?php if ($site_name || $site_slogan): ?>
         <hgroup id="name-and-slogan">

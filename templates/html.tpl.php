@@ -11,15 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- Styles  -->
 		 <?php print $styles; ?>
-        <link rel="stylesheet" href="http://localhost:8888/min/sites/all/themes/min/css/normalize.css">
-        <link rel="stylesheet" href="http://localhost:8888/min/sites/all/themes/min/css/all.css">
-        <link rel="stylesheet" href="http://localhost:8888/min/sites/all/themes/min/css/main.css">
+        <link rel="stylesheet" href="<?php echo base_path(); ?>sites/all/themes/min/css/normalize.css">
+        <link rel="stylesheet" href="<?php echo base_path(); ?>sites/all/themes/min/css/all.css">
+        <link rel="stylesheet" href="<?php echo base_path(); ?>sites/all/themes/min/css/main.css">
+        <link rel="stylesheet" href="<?php echo base_path(); ?>sites/all/themes/min/css/custom.css">
 
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Coda:800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
 
-        <script src="http://localhost:8888/min/sites/all/themes/min/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="<?php echo base_path(); ?>sites/all/themes/min/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
    <body class="<?php print $classes; ?>" <?php print $attributes;?>>
         <!--[if lt IE 7]>
@@ -33,9 +34,10 @@
 		 <?php print $page_bottom; ?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="http://localhost:8888/min/sites/all/themes/min/js/plugins.js"></script>
-        <script src="http://localhost:8888/min/sites/all/themes/min/js/main.js"></script>
+        <script>window.jQuery || document.write('<script src="<?php echo base_path(); ?>sites/all/themes/min/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="<?php echo base_path(); ?>sites/all/themes/min/js/plugins.js"></script>
+        <script src="<?php echo base_path(); ?>sites/all/themes/min/js/main.js"></script>
+        <script src="<?php echo base_path(); ?>sites/all/themes/min/js/scripts.js"></script>
         <?php print $scripts; ?>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
