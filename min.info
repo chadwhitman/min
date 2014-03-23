@@ -1,13 +1,16 @@
 name = Min
-description = Minimalist Zen Sub-theme
+description = Minimalist theme
 core = 7.x
 screenshot = screenshot.png
 
-; stylesheets
-stylesheets[all][] = css/all.css
+; Stylesheets
+; Links to stylesheets can be found in the html.tpl.php file.
+; stylesheets[all][] = css/main.css
+; stylesheets[all][] = css/custom.css
 
-;Scripts
-scripts[] = scripts.js
+; Scripts
+; Links to javascript can be found in the html.tpl.php file.
+; scripts[] = scripts.js
 
 
 ; Regions
