@@ -2,13 +2,22 @@
    Comment Styles
    ========================================================================== */
 
-#comments h2 {
-	text-align: center;
-	font-size: 1.8em;
+#comments {
+	 h2 {
+		 text-align: center;
+		 font-size: 1.8em;
+	}
+	h3 a:hover {
+		text-decoration: $line;
+	}
 }
 
-#comments h3 a:hover {
-	text-decoration: $line;
+comment {
+	margin-bottom: 6%;
+	p {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 .comment-add {
@@ -17,16 +26,4 @@
 
 .view .comment-add {
 	display: none;
-}
-
-#block-system-main .comment-add {
-
-}
-
-.comment {
-	margin-bottom: 6%;
-	p {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
 }

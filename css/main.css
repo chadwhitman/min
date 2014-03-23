@@ -169,21 +169,20 @@ img {
 #comments h2 {
   text-align: center;
   font-size: 1.8em; }
-
 #comments h3 a:hover {
   text-decoration: underline; }
+
+comment {
+  margin-bottom: 6%; }
+  comment p {
+    padding-left: 20px;
+    padding-right: 20px; }
 
 .comment-add {
   text-decoration: underline; }
 
 .view .comment-add {
   display: none; }
-
-.comment {
-  margin-bottom: 6%; }
-  .comment p {
-    padding-left: 20px;
-    padding-right: 20px; }
 
 /* ==========================================================================
    Drupal Styles
