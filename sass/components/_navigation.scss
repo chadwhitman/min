@@ -6,14 +6,24 @@
 	font-family: $crimson;
 	color: $grey;
 	li {
-		padding: 0px 10px 0px 0px;
+		padding: 0px;
+		margin-top: 0px;
 		a {
-			font-size: .9em;
+			font-size: .5em;
 			color: $grey;
 			font-weight: normal;
+			font-family: $crimson;
+			text-shadow:none;
+			margin-top: 0px;
 			&:hover {
 				color: $orange;
 			}
 		}
 	}
+}
+
+#site-slogan {
+	width: 100%;
+	text-align: left;
+	margin-top: -15px;
 }
