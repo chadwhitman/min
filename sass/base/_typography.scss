@@ -1,102 +1,96 @@
-/* Paragraph Text */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 
+/**
+ * Paragraphs and Links
+ */
 p {
+	font-family: $crimson;
+	color: $grey;
 	font-size: 24px;
 	line-height: 28px;
 	margin-bottom: 10px;
-	font-family: $crimson;
-	color: $grey;
+	a:hover {
+		text-decoration: $line;
+	}
 }
 
 p:first-letter {
-	font-size: 50px;
+	font-family: $crimson;
+	font-size: 55px;
+	font-weight: bold;
 }
 
-/* Links */
-
+/**
+ * Links
+ */
 a {
-	text-decoration:none;
 	color: $orange;
-	&:hover {
-		color: $grey;
-	}
+	text-decoration: none;
 }
 
-/* Headers */
+/* ==========================================================================
+   Headers
+   ========================================================================== */
+
+#{headings()} {
+    line-height: 100%;
+    font-family: $lato;
+	margin-top: 0px;
+	font-weight: normal;
+	
+}
 
 h1 {
-	&#page-title {
-		margin-top: 0px;
-		font-size: 2.6em;
-		line-height: 100%;
-		margin-bottom: 25px;
-		text-align:center;
-		text-transform: uppercase;
-		font-family: $neuton;
-		color: $orange;
-		clear:both;
-		text-shadow: 2px 2px 2px #333;
-	}
-
-	&#site-name {
-		margin-bottom: 0px;
-		font-family: $crimson;
-		font-weight: 700;
-		font-size: 2.8em;
-		line-height: 40px;
-		margin-top: 40px;
-		a {
-			color: $grey;
-		}
-	}
+	font-size: 2.4em;
 }
 
-h2 {
-	margin-top: 0px;
-	font-size: 1.3em;
-	line-height: 100%;
-	text-transform: uppercase;
-	font-family: $neuton;
-	color: $orange;
-	#site-slogan {
-	    font-family: $crimson;
-		font-size: 1.0em;
-	    color: $grey;
-	    margin-top: 0px;
-	}
-}
-
-h3 {
-  margin-top: 0px;
-  font-size: 1.5em;
-  line-height: 100%;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: #333;
-  margin-bottom: 15px;
-  text-decoration: underline;
-}
-
-h4 {
-	color: #fff;
-    font-family: $crimson;
-    margin-bottom: 0px;
-}
-
-/** Title of Each post **/
-
-.views-field-title {
+h2, .views-field-title, #page-title {
+    text-shadow: $shadow;
+	text-align:center;
+	text-transform: $up;
 	margin-top: 0px;
 	font-size: 2.6em;
 	line-height: 100%;
 	margin-bottom: 25px;
-	text-align:center;
-	text-transform: uppercase;
-	font-family: $neuton;
+	font-family: $lato;
 	color: $orange;
-	clear:both;
-	text-shadow: 2px 2px 2px #333;
+	clear: both;
+	font-weight: normal;
 	a:hover {
-		text-decoration: underline;
+		color: $grey;
+	}
+}
+
+#page-title {
+	margin-bottom: 0px;
+}
+
+h3 {
+	font-size: 2.0em;
+  	color: $grey;
+  	margin-bottom: 15px;
+  	text-decoration: none;
+}
+
+h4 {
+	font-size: 1.8em;
+}
+
+/**
+ * Name of your site
+ */
+#site-name {
+	margin-bottom: 0px;
+	font-family: $crimson;
+	font-weight: 700;
+	font-size: 2.8em;
+	margin-top: 40px;
+	a {
+		color: $grey;
+		&:hover {
+			color: $orange;
+		}
 	}
 }

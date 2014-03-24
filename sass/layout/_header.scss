@@ -1,23 +1,9 @@
-/** Header Styles **/
+/* ==========================================================================
+   Header Styles
+   ========================================================================== */
 
 header {
 	margin-bottom:30px;
-}
-
-ul#main-menu {
-	font-family: $crimson;
-	color: $grey;
-	font-size: 0.8em;
-	li {
-		padding: 0px 10px 0px 0px;
-		a {
-			color: $grey;
-			font-weight: normal;
-			&:hover {
-				color: $orange;
-			}
-		}
-	}
 }
 
 #site-info {

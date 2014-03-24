@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Global Page Styles
+   ========================================================================== */
+
+body {
+	max-width: 765px;
+	margin: 0 auto;
+	min-height: 820px;
+}
+
+.pager-current {
+	color: $grey;
+	font-size: 0.8em;
+}
+
+li[class^='pager-'] {
+	text-transform: $up;
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 0.8em;
+}
+
+

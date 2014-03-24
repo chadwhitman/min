@@ -1,10 +1,7 @@
-/* Admin Styles */
+/* ==========================================================================
+   Admin Theme Styles
+   ========================================================================== */
 
-.submitted {
+.submitted, #block-system-main .comment_forbidden {
 	display:none;
-}
-
-.show {
-	height: 50%;
-	background-color: rgba(37,37,37,0.9)
 }

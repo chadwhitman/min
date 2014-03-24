@@ -1,4 +1,6 @@
+#
 # This file is only needed for Compass/Sass integration.
+#
 
 # Location of the theme's resources.
 css_dir         = "css"
@@ -14,5 +16,5 @@ environment = :production
 line_comments = false
 
 # Comment output_style = :expanded or :nested or :compact or :compressed
-output_style = (environment == :development) ? :nested : :nested
+output_style = (environment == :production) ? :nested : :nested
 

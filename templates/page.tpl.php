@@ -1,6 +1,4 @@
 <?php
-// $Id$
-
 /**
  * @file
  * Default theme implementation to display a single Drupal page.
@@ -15,7 +13,7 @@
         </a>
       <?php endif; ?>
    </div>
-
+   
   <div id="site-info">
       <?php if ($site_name || $site_slogan): ?>
         <hgroup id="name-and-slogan">
@@ -25,7 +23,7 @@
             </h1>
           <?php endif; ?>
 
-            <h2 id="site-slogan">
+            <div id="menu">
             <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t(''))); ?> </h2>
         </hgroup>
        <?php endif; ?>

@@ -1,130 +1,169 @@
-/** Variables **/
-/** Fonts **/
-/** Colors **/
-/** Mixins **/
-/* Paragraph Text */
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+/**
+ * Main Fonts
+ */
+/**
+ * Main Colors
+ */
+/**
+ * Text Shadow
+ */
+/**
+ * Text Decoration
+ */
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+/**
+ * This theme uses Normalize.css. You can find it in the CSS folder
+ */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Paragraphs and Links
+ */
 p {
+  font-family: "Crimson Text", serif;
+  color: #333333;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 10px;
-  font-family: "Crimson Text", serif;
-  color: #333333; }
+  margin-bottom: 10px; }
+  p a:hover {
+    text-decoration: underline; }
 
 p:first-letter {
-  font-size: 50px; }
+  font-family: "Crimson Text", serif;
+  font-size: 55px;
+  font-weight: bold; }
 
-/* Links */
+/**
+ * Links
+ */
 a {
-  text-decoration: none;
-  color: #cc6600; }
-  a:hover {
-    color: #333333; }
+  color: #cc6600;
+  text-decoration: none; }
 
-/* Headers */
-h1#page-title {
+/* ==========================================================================
+   Headers
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 100%;
+  font-family: "Lato", sans-serif;
+  margin-top: 0px;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2.4em; }
+
+h2, .views-field-title, #page-title {
+  text-shadow: 2px 2px 2px #333333;
+  text-align: center;
+  text-transform: uppercase;
   margin-top: 0px;
   font-size: 2.6em;
   line-height: 100%;
   margin-bottom: 25px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Lato", sans-serif;
   color: #cc6600;
   clear: both;
-  text-shadow: 2px 2px 2px #333; }
-h1#site-name {
+  font-weight: normal; }
+  h2 a:hover, .views-field-title a:hover, #page-title a:hover {
+    color: #333333; }
+
+#page-title {
+  margin-bottom: 0px; }
+
+h3 {
+  font-size: 2.0em;
+  color: #333333;
+  margin-bottom: 15px;
+  text-decoration: none; }
+
+h4 {
+  font-size: 1.8em; }
+
+/**
+ * Name of your site
+ */
+#site-name {
   margin-bottom: 0px;
   font-family: "Crimson Text", serif;
   font-weight: 700;
   font-size: 2.8em;
-  line-height: 40px;
   margin-top: 40px; }
-  h1#site-name a {
+  #site-name a {
     color: #333333; }
+    #site-name a:hover {
+      color: #cc6600; }
 
-h2 {
-  margin-top: 0px;
-  font-size: 1.3em;
-  line-height: 100%;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: #cc6600; }
-  h2 #site-slogan {
-    font-family: "Crimson Text", serif;
-    font-size: 1.0em;
-    color: #333333;
-    margin-top: 0px; }
-
-h3 {
-  margin-top: 0px;
-  font-size: 1.5em;
-  line-height: 100%;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: #333;
-  margin-bottom: 15px;
-  text-decoration: underline; }
-
-h4 {
-  color: #fff;
-  font-family: "Crimson Text", serif;
-  margin-bottom: 0px; }
-
-/** Title of Each post **/
-.views-field-title {
-  margin-top: 0px;
-  font-size: 2.6em;
-  line-height: 100%;
-  margin-bottom: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: #cc6600;
-  clear: both;
-  text-shadow: 2px 2px 2px #333; }
-  .views-field-title a:hover {
-    text-decoration: underline; }
-
-body {
-  max-width: 765px;
-  margin: 0 auto;
-  font-size: 100%;
-  min-height: 800px; }
-
-/** Header Styles **/
+/* ==========================================================================
+   Header Styles
+   ========================================================================== */
 header {
   margin-bottom: 30px; }
-
-ul#main-menu {
-  font-family: "Crimson Text", serif;
-  color: #333333;
-  font-size: 0.8em; }
-  ul#main-menu li {
-    padding: 0px 10px 0px 0px; }
-    ul#main-menu li a {
-      color: #333333;
-      font-weight: normal; }
-      ul#main-menu li a:hover {
-        color: #cc6600; }
 
 #site-info {
   float: left;
   padding-top: 10px; }
 
-tr {
-  display: block; }
-
-#main-wrapper .views-field-body {
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+.field-content, .views-row {
   margin-bottom: 5%; }
 
+blockquote {
+  background-color: #fff7eb;
+  padding: 5px 20px 20px 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+/* ==========================================================================
+   Global Page Styles
+   ========================================================================== */
+body {
+  max-width: 765px;
+  margin: 0 auto;
+  min-height: 820px; }
+
+.pager-current {
+  color: #333333;
+  font-size: 0.8em; }
+
+li[class^='pager-'] {
+  text-transform: uppercase;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 0.8em; }
+
+/* ==========================================================================
+   Image Styles
+   ========================================================================== */
+/**
+ * General
+ */
 img {
   max-width: 100%;
   height: auto; }
 
-/* LOGO */
+/**
+ * Portrait/Logo Style
+ */
 #logo {
   float: right;
-  padding-top: 22px;
+  margin-top: 25px;
   padding-right: 10px; }
   #logo img {
     width: 75px;
@@ -132,7 +171,6 @@ img {
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    background: url(http://link-to-your/image.jpg) no-repeat;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
@@ -144,50 +182,160 @@ img {
       -moz-filter: grayscale(100%);
       filter: grayscale(100%); }
 
-/* Admin Styles */
-.submitted {
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+#menu {
+  font-family: "Crimson Text", serif;
+  color: #333333;
+  width: 100%;
+  text-align: left; }
+  #menu li {
+    padding: 0px;
+    margin-top: 0px; }
+    #menu li a {
+      font-size: 1.2em;
+      color: #333333;
+      padding-right: 8px;
+      font-weight: normal;
+      font-family: "Crimson Text", serif;
+      text-shadow: none;
+      margin-top: 0px; }
+      #menu li a:hover {
+        color: #cc6600; }
+
+/* ==========================================================================
+   Comment Styles
+   ========================================================================== */
+#comments h2 {
+  text-align: center;
+  font-size: 1.8em;
+  clear: both; }
+#comments h3 a:hover {
+  text-decoration: underline; }
+
+.comment {
+  margin-bottom: 6%; }
+  .comment p {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .comment p:first-letter {
+      font-weight: normal;
+      font-size: 1.0em; }
+
+/* ==========================================================================
+   Tag Styles
+   ========================================================================== */
+.field-type-taxonomy-term-reference {
+  text-transform: uppercase;
+  font-size: 0.8em; }
+  .field-type-taxonomy-term-reference .field-label {
+    color: #333333;
+    background-color: #fff7eb;
+    font-weight: normal;
+    display: inline;
+    float: left;
+    padding: 3px 3px 3px 5px; }
+  .field-type-taxonomy-term-reference .field-item {
+    display: inline;
+    float: left;
+    margin-right: 5px;
+    padding: 3px; }
+    .field-type-taxonomy-term-reference .field-item:hover {
+      text-decoration: underline; }
+
+.field-type-datetime {
+  text-transform: uppercase;
+  font-size: 0.9em; }
+  .field-type-datetime .field-item {
+    background-color: #fff7eb;
+    display: inline;
+    float: right;
+    margin-right: 5px;
+    padding: 3px; }
+
+.page-taxonomy h2 {
+  margin-top: 45px;
+  font-size: 2.0em; }
+
+.node-readmore, .comment-comments {
+  text-transform: uppercase;
+  font-size: 0.8em; }
+  .node-readmore a:hover, .comment-comments a:hover {
+    text-decoration: underline; }
+
+/* ==========================================================================
+   Drupal Styles
+   ========================================================================== */
+/* ==========================================================================
+   Admin Theme Styles
+   ========================================================================== */
+.submitted, #block-system-main .comment_forbidden {
   display: none; }
 
-.show {
-  height: 50%;
-  background-color: rgba(37, 37, 37, 0.9); }
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (min-width: 240px) and (max-width: 500px) {
+  p {
+    font-size: 22px;
+    line-height: 27px;
+    padding: 0px 15px 0px 15px; }
 
-@media (min-width: 240px) and (max-width: 480px) {
+  p:first-letter {
+    font-size: 35px; }
+
+  .views-field-title, .view h2 {
+    font-size: 2.4em; }
+
   #site-info {
     float: none;
     text-align: center;
     padding-top: 15px; }
 
-  h1#site-name {
+  #site-name {
     padding-bottom: 15px;
     margin-top: 0px;
     line-height: 20px; }
 
-  header {
-    margin-bottom: 5px; }
+  blockquote {
+    margin: 10px; }
+
+  #menu {
+    text-align: center;
+    margin-bottom: 30px; }
+
+  #block-system-main {
+    margin-bottom: 50px; }
+
+  #page-title {
+    font-size: 2.4em;
+    margin-bottom: 0px; }
 
   #logo {
     float: none;
-    padding-left: 22%; }
+    padding-left: 22%;
+    margin-bottom: 20px; }
 
-  #page .content {
+  .content {
     padding-left: 10px;
     padding-right: 10px; }
 
   .region-content {
     padding-left: 0px; }
 
-  .views-field-title {
-    font-size: 2.4em; }
-
-  p {
-    font-size: 22px;
-    line-height: 27px;
-    padding: 0px 15px 0px 15px; } }
+  header {
+    margin-bottom: 5px; } }
 @media (max-width: 768px) {
   #page .content, header {
     padding-left: 10px;
     padding-right: 10px; }
+
+  blockquote {
+    margin: 10px; }
+
+  #block-system-main {
+    margin-bottom: 50px; }
 
   .region-content {
     padding-left: 1%; } }

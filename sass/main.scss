@@ -1,7 +1,5 @@
 // Sass utilities
-@import "helpers/functions";
 @import "helpers/variables";
-@import "helpers/functions";
 @import "helpers/mixins";
 
 // Base stuff
@@ -9,24 +7,16 @@
 @import "base/typography";
 
 // Layout related stylesheets
-@import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/sidebar";
-@import "layout/tables";
 @import 'layout/posts';
+@import "layout/general";
 
-// Components and modules
-@import "components/carousel";
-@import "components/buttons";
-@import "components/cover";
-@import "components/dropdown";
+// Components and moduless
 @import "components/images";
 @import "components/navigation";
-
-// Page-specific stylesheets
-@import "pages/home";
-@import "pages/general";
+@import "components/comments";
+@import "components/tags";
 
 // Themes
 @import "themes/theme";

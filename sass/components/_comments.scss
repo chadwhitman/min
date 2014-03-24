@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Comment Styles
+   ========================================================================== */
+
+#comments {
+	h2 {
+		text-align: center;
+		font-size: 1.8em;
+		clear:both;
+	}
+	h3 a:hover {
+		text-decoration: $line;
+	}
+}
+
+.comment {
+	margin-bottom: 6%;
+	p {
+		padding-left: 20px;
+		padding-right: 20px;
+		&:first-letter {
+			font-weight: normal;
+			font-size: 1.0em;
+		}
+	}
+}
