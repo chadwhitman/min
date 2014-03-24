@@ -3,7 +3,7 @@
    ========================================================================== */
 
 $width-small: 240px;
-$width-medium: 480px;
+$width-medium: 500px;
 $width-large: 768px;
 
 @media (min-width: $width-small) and (max-width: $width-medium) {
@@ -12,6 +12,10 @@ $width-large: 768px;
 		font-size: 22px;
 		line-height: 27px;
 		padding: 0px 15px 0px 15px;
+	}
+	
+	p:first-letter {
+		font-size: 35px;
 	}
 	
 	.views-field-title, .view h2 {
@@ -30,8 +34,13 @@ $width-large: 768px;
 		line-height: 20px;
 	}
 	
-	#site-slogan {
+	blockquote {
+		margin: 10px;
+	}
+	
+	#menu {
 		text-align: center;
+		margin-bottom: 30px;
 	}
 	
 	#block-system-main {
@@ -68,6 +77,10 @@ $width-large: 768px;
 	#page .content, header {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	
+	blockquote {
+		margin: 10px;
 	}
 	
 	#block-system-main {

@@ -123,7 +123,12 @@ header {
 
 blockquote {
   background-color: #fff7eb;
-  padding: 5px 20px 20px 20px; }
+  padding: 5px 20px 20px 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
 
 /* ==========================================================================
    Global Page Styles
@@ -158,7 +163,7 @@ img {
  */
 #logo {
   float: right;
-  padding-top: 22px;
+  margin-top: 25px;
   padding-right: 10px; }
   #logo img {
     width: 75px;
@@ -180,26 +185,24 @@ img {
 /* ==========================================================================
    Main Styles
    ========================================================================== */
-#main-menu {
+#menu {
   font-family: "Crimson Text", serif;
-  color: #333333; }
-  #main-menu li {
+  color: #333333;
+  width: 100%;
+  text-align: left; }
+  #menu li {
     padding: 0px;
     margin-top: 0px; }
-    #main-menu li a {
-      font-size: .5em;
+    #menu li a {
+      font-size: 1.2em;
       color: #333333;
+      padding-right: 8px;
       font-weight: normal;
       font-family: "Crimson Text", serif;
       text-shadow: none;
       margin-top: 0px; }
-      #main-menu li a:hover {
+      #menu li a:hover {
         color: #cc6600; }
-
-#site-slogan {
-  width: 100%;
-  text-align: left;
-  margin-top: -15px; }
 
 /* ==========================================================================
    Comment Styles
@@ -219,9 +222,6 @@ img {
     .comment p:first-letter {
       font-weight: normal;
       font-size: 1.0em; }
-
-#block-system-main .comment-add {
-  display: none; }
 
 /* ==========================================================================
    Tag Styles
@@ -254,6 +254,16 @@ img {
     margin-right: 5px;
     padding: 3px; }
 
+.page-taxonomy h2 {
+  margin-top: 45px;
+  font-size: 2.0em; }
+
+.node-readmore, .comment-comments {
+  text-transform: uppercase;
+  font-size: 0.8em; }
+  .node-readmore a:hover, .comment-comments a:hover {
+    text-decoration: underline; }
+
 /* ==========================================================================
    Drupal Styles
    ========================================================================== */
@@ -266,11 +276,14 @@ img {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media (min-width: 240px) and (max-width: 480px) {
+@media (min-width: 240px) and (max-width: 500px) {
   p {
     font-size: 22px;
     line-height: 27px;
     padding: 0px 15px 0px 15px; }
+
+  p:first-letter {
+    font-size: 35px; }
 
   .views-field-title, .view h2 {
     font-size: 2.4em; }
@@ -285,8 +298,12 @@ img {
     margin-top: 0px;
     line-height: 20px; }
 
-  #site-slogan {
-    text-align: center; }
+  blockquote {
+    margin: 10px; }
+
+  #menu {
+    text-align: center;
+    margin-bottom: 30px; }
 
   #block-system-main {
     margin-bottom: 50px; }
@@ -313,6 +330,9 @@ img {
   #page .content, header {
     padding-left: 10px;
     padding-right: 10px; }
+
+  blockquote {
+    margin: 10px; }
 
   #block-system-main {
     margin-bottom: 50px; }

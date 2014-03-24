@@ -8,4 +8,5 @@
 blockquote {
 	background-color: #fff7eb;
 	padding: 5px 20px 20px 20px;
+	@include border-radius(10px);
 }

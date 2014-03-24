@@ -2,15 +2,18 @@
    Main Styles
    ========================================================================== */
 
-#main-menu {
+#menu {
 	font-family: $crimson;
 	color: $grey;
+	width: 100%;
+	text-align: left;
 	li {
 		padding: 0px;
 		margin-top: 0px;
 		a {
-			font-size: .5em;
+			font-size: 1.2em;
 			color: $grey;
+			padding-right: 8px;
 			font-weight: normal;
 			font-family: $crimson;
 			text-shadow:none;
@@ -20,10 +23,4 @@
 			}
 		}
 	}
-}
-
-#site-slogan {
-	width: 100%;
-	text-align: left;
-	margin-top: -15px;
 }
