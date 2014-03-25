@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+/**
+ * Spacing between each Post
+ */
+.field-content, .views-row, .node-article, .node-posts {
+	margin-bottom: 5%;
+}
+
+/**
+ * Blockquote
+ */
+blockquote {
+	background-color: $lo;
+	padding: 5px 20px 20px 20px;
+	@include border-radius(10px);
+}
+
+/**
+ * Readmore & Comments
+ */
+#block-system-main .node-readmore {
+	float:right;
+	display:inline;
+	margin-right: 3px;
+	background-color: $lo;
+	padding: 4px;
+	font-size: 0.8em;
+}
+
+.node-readmore, .comment-comments {
+	text-transform: $up;
+	font-size: 0.8em;
+	a:hover {
+		text-decoration: $line;
+	}
+}

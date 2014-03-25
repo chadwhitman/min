@@ -1,0 +1,769 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+@import url("http://fonts.googleapis.com/css?family=Crimson+Text");
+/* ==========================================================================
+   Google Fonts
+   ========================================================================== */
+/**
+ * Lato & Crimson via Google
+ */
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+/**
+ * Main Fonts
+ */
+/**
+ * Main Colors
+ */
+/**
+ * Text Shadow
+ */
+/**
+ * Text Decoration
+ */
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* normalize.scss 2.2.0+normalize.2.1.3 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  font-size: 2em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-color: #c0c0c0;
+  border-top-style: solid;
+  border-top-width: 0.0625em;
+  padding-top: 0.4625em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.9125em;
+  border-left-style: solid;
+  border-left-width: 0.0625em;
+  padding-left: 0.875em;
+  border-right-style: solid;
+  border-right-width: 0.0625em;
+  padding-right: 0.875em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 4. Improve appearance and consistency with IE 6/7.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ==========================================================================
+   Content Styles
+   ========================================================================== */
+/**
+ * Paragraphs
+ */
+p {
+  font-family: "Crimson Text", serif;
+  color: #333333;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px; }
+  p a:hover {
+    text-decoration: underline; }
+  p:first-letter {
+    font-family: "Crimson Text", serif;
+    font-size: 55px;
+    font-weight: bold; }
+
+/**
+ * Links
+ */
+a {
+  color: #cc6600;
+  text-decoration: none; }
+
+/* ==========================================================================
+   Headers & Titles
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 100%;
+  font-family: "Lato", sans-serif;
+  margin-top: 0px;
+  font-weight: normal;
+  color: #333333; }
+
+h1 {
+  font-size: 2.8em; }
+
+h2 {
+  font-size: 2.6em; }
+
+h3 {
+  font-size: 2.4em;
+  margin-bottom: 15px;
+  text-decoration: none; }
+
+h4 {
+  font-size: 2.2em; }
+
+/**
+ * Name of Site & Title of Pages
+ */
+#site-name {
+  margin-bottom: 0px;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-size: 2.8em;
+  margin-top: 40px; }
+  #site-name a {
+    color: #333333; }
+    #site-name a:hover {
+      color: #cc6600; }
+
+#page-title, h2 {
+  margin-bottom: 0px; }
+
+.views-field-title, #page-title, h2 {
+  text-shadow: 2px 2px 2px #333333;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-size: 2.6em;
+  line-height: 100%;
+  margin-bottom: 25px;
+  font-family: "Lato", sans-serif;
+  color: #cc6600;
+  clear: both;
+  font-weight: normal; }
+  .views-field-title a:hover, #page-title a:hover, h2 a:hover {
+    color: #333333; }
+
+/* ==========================================================================
+   Global Page Styles
+   ========================================================================== */
+/**
+ * Body
+ */
+body {
+  max-width: 765px;
+  margin: 0 auto; }
+
+/* ==========================================================================
+   Header Styles
+   ========================================================================== */
+/**
+ * Header and Site Info Area
+ */
+header {
+  margin-bottom: 30px; }
+
+#site-info {
+  float: left;
+  padding-top: 10px; }
+
+/* ==========================================================================
+   Pager Styles
+   ========================================================================== */
+/**
+ * Full and Mini Pager Styles
+ */
+.pager-current {
+  color: #333333;
+  font-size: 0.8em; }
+
+li[class^='pager-'] {
+  text-transform: uppercase;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 0.8em; }
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+/**
+ * Spacing between each Post
+ */
+.field-content, .views-row, .node-article, .node-posts {
+  margin-bottom: 5%; }
+
+/**
+ * Blockquote
+ */
+blockquote {
+  background-color: #fff7eb;
+  padding: 5px 20px 20px 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+/**
+ * Readmore & Comments
+ */
+#block-system-main .node-readmore {
+  float: right;
+  display: inline;
+  margin-right: 3px;
+  background-color: #fff7eb;
+  padding: 4px;
+  font-size: 0.8em; }
+
+.node-readmore, .comment-comments {
+  text-transform: uppercase;
+  font-size: 0.8em; }
+  .node-readmore a:hover, .comment-comments a:hover {
+    text-decoration: underline; }
+
+/* ==========================================================================
+   Image Styles
+   ========================================================================== */
+/**
+ * General
+ */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/**
+ * Portrait/Logo Style
+ */
+#logo {
+  float: right;
+  margin-top: 25px;
+  padding-right: 10px; }
+  #logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%); }
+    #logo img:hover {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      filter: grayscale(100%); }
+
+/**
+ * Image Style in Content
+ */
+.field-item img {
+  float: left;
+  max-width: 100%;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  border: 3px solid #cc6600; }
+
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+/**
+ * Main Menu Styles
+ */
+#menu {
+  font-family: "Crimson Text", serif;
+  color: #333333;
+  width: 100%;
+  text-align: left; }
+  #menu li {
+    padding: 0px;
+    margin-top: 0px; }
+    #menu li a {
+      font-size: 1.2em;
+      color: #333333;
+      padding-right: 8px;
+      font-weight: normal;
+      font-family: "Crimson Text", serif;
+      text-shadow: none;
+      margin-top: 0px; }
+      #menu li a:hover {
+        color: #cc6600; }
+
+/* ==========================================================================
+   Comment Styles
+   ========================================================================== */
+#comments h2 {
+  text-align: center;
+  font-size: 1.8em;
+  clear: both;
+  margin-top: 40px;
+  padding-top: 40px; }
+#comments h3 a:hover {
+  text-decoration: underline; }
+
+.comment {
+  margin-bottom: 6%; }
+  .comment p {
+    padding-left: 20px;
+    padding-right: 20px;
+    word-wrap: break-word; }
+    .comment p:first-letter {
+      font-weight: normal;
+      font-size: 1.0em; }
+
+#block-system-main .comment-add, #block-system-main .comment-comments {
+  display: none; }
+
+/* ==========================================================================
+   Tag Styles
+   ========================================================================== */
+/**
+ * Tag Styles
+ */
+.field-type-taxonomy-term-reference {
+  text-transform: uppercase;
+  font-size: 0.8em; }
+  .field-type-taxonomy-term-reference .field-label {
+    color: #333333;
+    background-color: #fff7eb;
+    font-weight: normal;
+    display: inline;
+    float: left;
+    padding: 3px 3px 3px 5px; }
+  .field-type-taxonomy-term-reference .field-item {
+    display: inline;
+    float: left;
+    margin-right: 5px;
+    padding: 3px; }
+    .field-type-taxonomy-term-reference .field-item:hover {
+      text-decoration: underline; }
+
+.page-taxonomy h2 {
+  margin-top: 45px;
+  font-size: 2.0em; }
+
+/**
+ * Date Styles
+ */
+.field-type-datetime {
+  text-transform: uppercase;
+  font-size: 0.9em; }
+  .field-type-datetime .field-label {
+    display: none; }
+  .field-type-datetime .field-item {
+    background-color: #fff7eb;
+    display: inline;
+    float: right;
+    margin-right: 5px;
+    padding: 3px; }
+
+/* ==========================================================================
+   Drupal Styles
+   ========================================================================== */
+/* ==========================================================================
+   Admin Theme Styles
+   ========================================================================== */
+.submitted, #block-system-main .comment_forbidden {
+  display: none; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 550px) {
+  p {
+    font-size: 22px;
+    line-height: 27px;
+    padding: 0px 15px 0px 15px; }
+
+  p:first-letter {
+    font-size: 35px; }
+
+  .views-field-title, .view h2 {
+    font-size: 2.4em; }
+
+  #site-info {
+    float: none;
+    text-align: center;
+    padding-top: 15px; }
+
+  #site-name {
+    padding-bottom: 15px;
+    margin-top: 0px;
+    line-height: 20px; }
+
+  blockquote {
+    margin: 10px; }
+
+  #menu {
+    text-align: center;
+    margin-bottom: 30px; }
+
+  #block-system-main {
+    margin-bottom: 50px; }
+
+  #page-title, h2 {
+    font-size: 2.4em;
+    margin-bottom: 0px; }
+
+  #logo {
+    float: none;
+    padding-left: 22%;
+    margin-bottom: 20px; }
+
+  .content {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .region-content {
+    padding-left: 0px; }
+
+  header {
+    margin-bottom: 5px; } }
+@media (min-width: 551px) and (max-width: 786px) {
+  #page .content, header {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  blockquote {
+    margin: 10px; }
+
+  #block-system-main {
+    margin-bottom: 50px; }
+
+  .region-content {
+    padding-left: 1%; } }
+/* ==========================================================================
+   Your Custom SCSS Files Here
+   ========================================================================== */

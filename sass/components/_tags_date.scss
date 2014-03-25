@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Tag Styles
+   ========================================================================== */
+
+/**
+ * Tag Styles
+ */
+.field-type-taxonomy-term-reference  {
+	text-transform: $up;
+	font-size: 0.8em;
+		.field-label {
+			color: $grey;
+			background-color: $lo;
+			font-weight: normal;
+			display:inline;
+			float:left;
+			padding: 3px 3px 3px 5px;
+		}
+		.field-item {
+			display: inline;
+			float:left;
+			margin-right: 5px;
+			padding: 3px;
+			&:hover {
+				text-decoration: $line;
+			}
+		}
+}
+
+.page-taxonomy {
+	h2 {
+		margin-top: 45px;
+		font-size: 2.0em;
+	}
+
+}
+
+/**
+ * Date Styles
+ */
+.field-type-datetime {
+	text-transform: $up;
+	font-size: 0.9em;
+	.field-label {
+		display: none;
+	}
+	.field-item {
+			background-color: $lo;
+			display: inline;
+			float:right;
+			margin-right: 5px;
+			padding: 3px;
+	}
+}
