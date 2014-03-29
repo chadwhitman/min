@@ -1,4 +1,5 @@
 Min Theme: A Personal Blog theme for Drupal 7
+
 Description: Min is a minimal, responsive, single-column, content based theme.
 Based on: HTML5 Boilerplate, SASS/SCSS, Normalize.css
 --------------------------------------------
