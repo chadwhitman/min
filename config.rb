@@ -9,12 +9,12 @@ extensions_dir  = "sass-extensions"
 images_dir      = "images"
 javascripts_dir = "js"
 
-# Production or Develoment Enviroment
-environment = :production
+# Production or Develoment Environment
+environment = :development
 
 # Sass Comments
 line_comments = false
 
 # Comment output_style = :expanded or :nested or :compact or :compressed
-output_style = (environment == :production) ? :nested : :nested
+output_style = (environment == :development) ? :expanded : :compressed
 

@@ -3,10 +3,28 @@
    ========================================================================== */
 
 /**
+ * HTML
+ */
+html,
+body {
+	height: 100%;
+}
+
+/**
  * Body
  */
-
 body {
 	max-width: 765px;
 	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+/**
+ * Button Spacing
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	margin-right: 10px;
 }

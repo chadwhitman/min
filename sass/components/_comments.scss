@@ -28,7 +28,33 @@
 	}
 }
 
-#block-system-main .comment-add, #block-system-main .comment-comments {
-	display:none;
-}
+/**
+ * If you want to include number of comments link and "add new comment" link
+ * uncomment this css and comment out the display none below
+ */
+/** #block-system-main .comment-add {
+	@extend .field-type-taxonomy-term-reference;
+	padding-left: 0px;
+	margin-top: 30px;
+	text-align:left;
+	background-color: $lo;
+	a {
+		color: $grey;
+		background-color: $lo;
+		font-weight: normal;
+		display:inline;
+		float:left;
+		padding: 3px 3px 3px 5px;
+		&:hover {
+				text-decoration: $line;
+		}
+	}
 
+} **/
+
+#block-system-main {
+	.comment-add,
+	.comment-comments {
+		display: none;
+	}
+}

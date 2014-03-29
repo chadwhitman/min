@@ -1,3 +1,11 @@
+<?php
+/**
+ * @file
+ * Default theme implementation to display the basic
+ * html structure of a single Drupal page.
+ */
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -26,7 +34,6 @@
 		 <?php print $page_bottom; ?>
 
 		<!-- START BODY SCRIPTS -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <?php print $scripts; ?>
         <!-- END BODY SCRIPTS -->
 
@@ -43,4 +50,3 @@
 
     </body>
 </html>
-

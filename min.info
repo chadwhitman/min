@@ -7,12 +7,11 @@ screenshot = screenshot.png
 ; This theme uses HTML5 Boilerplate & Normalize.css
 ; All sass partials are imported in the "main.css" file
 stylesheets[all][] = css/boilerplate.css
+stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/main.css
 stylesheets[all][] = css/custom.css
 
 ; Scripts
-scripts[] = js/vendor/modernizr-2.6.2.min.js
-scripts[] = js/vendor/jquery-1.10.2.min.js
 scripts[] = js/scripts.js
 
 ; Regions
