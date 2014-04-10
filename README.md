@@ -1,6 +1,8 @@
 Min Theme: A Personal Blog theme for Drupal 7
-
+Version: 1.2
+License: GPL => http://www.gnu.org/copyleft/gpl.html
 Description: Min is a minimal, responsive, single-column, content based theme.
+Uses: HTML5 Boilerplate, SASS/SCSS, Normalize.css
 --------------------------------------------
 
 OVERVIEW

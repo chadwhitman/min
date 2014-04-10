@@ -96,6 +96,18 @@ $width-large: 786px;
   #comments h2.title {
     margin-bottom: 25px;
   }
+
+  input {
+	  width: 100%;
+  }
+
+  input[type="submit"] {
+	  margin-bottom: 10px;
+  }
+
+  .page-user ul.primary li {
+	  display: block;
+  }
 }
 
 @media (min-width: $width-medium) and (max-width: $width-large) {
