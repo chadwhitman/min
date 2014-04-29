@@ -1,21 +1,18 @@
-Min Theme: A Personal Blog theme for Drupal 7
+Min is a minimal, responsive, single-column, content-based theme for Drupal 7.
+
 Version: 1.2
-License: GPL => http://www.gnu.org/copyleft/gpl.html
-Description: Min is a minimal, responsive, single-column, content based theme.
-Uses: HTML5 Boilerplate, SASS/SCSS, Normalize.css
---------------------------------------------
+
+Utilizes/Based on: HTML5 Boilerplate, Sass/Scss, Normalize.css
 
 OVERVIEW
 ---------------------
 
 Min theme is designed for the purpose of being a personal blog that looks and functions like the demo image found here "/demo-image/demo-screenshot.png."
 
-Min theme is not a "base theme" or "starter theme," in that it has been designed to be easily transformed into any kind of website.
-
 You can use the default "Article" content type to start posting blogs or you can create your own content type and
 view page and set the homepage (via the site configuration) to your view page's url.
 
-I'd recommend setting the teaser body field to 1200 characters, which you can find
+I'd recommend setting the teaser body field to something like 1200 characters. You can find the body field
 at this url "/admin/structure/types/manage/article/display/teaser."
 
 
