@@ -108,6 +108,10 @@ $width-large: 786px;
   .page-user ul.primary li {
 	  display: block;
   }
+
+  #feed {
+	  text-align: center;
+  }
 }
 
 @media (min-width: $width-medium) and (max-width: $width-large) {
@@ -136,5 +140,9 @@ $width-large: 786px;
 
   #block-system-main .comment-add {
     display: none;
+  }
+
+  #feed {
+	  text-align: center;
   }
 }

@@ -288,6 +288,16 @@ img {
   border: 3px solid #cc6600;
 }
 
+/**
+ * Image Style For Feed Image
+ */
+#feed {
+  margin-bottom: 20px;
+}
+#feed img {
+  vertical-align: top;
+}
+
 /* ==========================================================================
    Main Styles
    ========================================================================== */
@@ -539,6 +549,10 @@ img {
   .page-user ul.primary li {
     display: block;
   }
+
+  #feed {
+    text-align: center;
+  }
 }
 @media (min-width: 551px) and (max-width: 786px) {
   blockquote {
@@ -565,6 +579,10 @@ img {
 
   #block-system-main .comment-add {
     display: none;
+  }
+
+  #feed {
+    text-align: center;
   }
 }
 /* ==========================================================================

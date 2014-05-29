@@ -52,7 +52,7 @@
                 <ul class="action-links"><?php print $action_links; ?></ul>
                 <?php endif; ?>
                 <?php print render($page['content']); ?>
-                <?php print $feed_icons; ?>
+                <div id="feed"><?php print $feed_icons; ?></div>
         </div> <!-- /main -->
         <?php print render($page['sidebar_second']); ?>
      </div> <!-- /#main -->

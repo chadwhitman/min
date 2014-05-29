@@ -47,3 +47,13 @@ img {
 	margin-bottom: 10px;
 	border: 3px solid $orange;
 }
+
+/**
+ * Image Style For Feed Image
+ */
+#feed {
+  margin-bottom: 20px;
+  img {
+    vertical-align: top;
+  }
+}
