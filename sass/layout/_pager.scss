@@ -2,17 +2,20 @@
    Pager Styles
    ========================================================================== */
 
-/**
- * Full and Mini Pager Styles
- */
 .pager-current {
 	color: $grey;
-	font-size: 0.8em;
 }
 
 li[class^='pager-'] {
 	text-transform: $up;
 	padding-right: 0px;
 	padding-left: 0px;
-	font-size: 0.8em;
+	@include font-size(12px);
+	background-color: #dfdfdf;
+	border: 1px solid #ccc;
+	@include border-radius(6px);
+}
+
+.item-list ul li {
+	margin-left: 5px;
 }

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Default theme implementation to display a single Drupal page.
+ * Min theme implementation to display a single Drupal page.
  */
 ?>
 <header role="banner" class="clearfix">
@@ -56,5 +56,7 @@
         </div> <!-- /main -->
         <?php print render($page['sidebar_second']); ?>
      </div> <!-- /#main -->
-   <?php print render($page['footer']); ?>
+   <footer>  
+   	<?php print render($page['footer']); ?>
+   </footer>
 </div> <!-- /#page -->

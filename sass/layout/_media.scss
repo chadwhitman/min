@@ -9,13 +9,13 @@ $width-large: 786px;
 @media (max-width: $width-small) {
 
   p {
-    font-size: 22px;
-    line-height: 27px;
+    @include font-size(25px);
+    line-height: 32px;
     padding: 0px 15px 0px 15px;
   }
 
   p:first-letter {
-    font-size: 35px;
+    @include font-size(35px);;
   }
 
   blockquote {
@@ -25,16 +25,15 @@ $width-large: 786px;
   .views-field-title,
   .view h2,
   #page-title {
-    font-size: 2.4em;
+    @include font-size(38px);
   }
 
   h2 {
-    font-size: 2.4em;
-    margin-bottom: 0px;
+    @include font-size(38px);
   }
 
   h3 {
-    font-size: 1.8em;
+    @include font-size(28px);
   }
 
   #site-info {
@@ -111,6 +110,11 @@ $width-large: 786px;
 
   #feed {
 	  text-align: center;
+  }
+  
+  #top-bar {
+	  height: 2px;
+	  background-color: $orange;
   }
 }
 

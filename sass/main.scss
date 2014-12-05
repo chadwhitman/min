@@ -3,15 +3,15 @@
 @import "helpers/mixins";
 
 // Base
-@import "base/content";
+@import "base/default";
 
 // Layout
-@import "layout/structure";
 @import "layout/header";
 @import "layout/pager";
 @import 'layout/posts';
 
 // Components
+@import "components/print";
 @import "components/images";
 @import "components/navigation";
 @import "components/comments";
@@ -26,6 +26,3 @@
 
 // Your Custom Styles
 @import 'custom/custom';
-
-
-

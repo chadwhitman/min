@@ -2,16 +2,24 @@
    Comment Styles
    ========================================================================== */
 
+.submitted {
+	display: none;
+	font-family: $crimson;
+}
+
 #comments {
 	h2 {
 		text-align: center;
-		font-size: 1.8em;
+		@include font-size(28px);
 		clear:both;
 		margin-top: 40px;
 		padding-top: 40px;
 	}
 	h3 a:hover {
 		text-decoration: $line;
+	}
+	.submitted {
+		display: block;
 	}
 }
 
@@ -23,37 +31,28 @@
 		word-wrap: break-word;
 				&:first-letter {
 			font-weight: normal;
-			font-size: 1.0em;
+			@include font-size(16px);
 		}
 	}
 }
 
-/**
- * If you want to include number of comments link and "add new comment" link
- * uncomment this css and comment out the display none below
- */
-/** #block-system-main .comment-add {
-	@extend .field-type-taxonomy-term-reference;
-	padding-left: 0px;
-	margin-top: 30px;
-	text-align:left;
-	background-color: $lo;
-	a {
-		color: $grey;
-		background-color: $lo;
-		font-weight: normal;
-		display:inline;
-		float:left;
-		padding: 3px 3px 3px 5px;
-		&:hover {
-				text-decoration: $line;
+.filter-help {
+	p {
+		@include font-size(18px);
+		&:first-child {
+			&:first-letter {
+				font-size: 100%;
+				font-weight: normal;
+			}
 		}
 	}
-
-} **/
+	a:hover {
+		text-decoration:none;
+	}
+}
 
 #block-system-main {
-	.comment-add,
+	.comment-add, 
 	.comment-comments {
 		display: none;
 	}

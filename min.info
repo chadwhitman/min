@@ -5,13 +5,9 @@ core = 7.x
 ; Stylesheets
 ; This theme uses HTML5 Boilerplate & Normalize.css
 ; All sass partials are imported in the "main.css" file
-stylesheets[all][] = css/boilerplate.css
-stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/main.css
 stylesheets[all][] = css/custom.css
-
-; Scripts
-scripts[] = js/scripts.js
 
 ; Regions
 regions[header] = Header

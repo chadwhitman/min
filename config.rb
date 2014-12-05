@@ -16,5 +16,4 @@ environment = :development
 line_comments = false
 
 # Comment output_style = :expanded or :nested or :compact or :compressed
-output_style = (environment == :development) ? :expanded : :compressed
-
+output_style = :expanded

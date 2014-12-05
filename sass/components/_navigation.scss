@@ -14,13 +14,14 @@
 		padding: 0px;
 		margin-top: 0px;
 		a {
-			font-size: 1.2em;
-			color: $grey;
+			@include font-size(19px);
+			color: $menu;
 			padding-right: 8px;
 			font-weight: normal;
 			font-family: $crimson;
 			text-shadow:none;
 			margin-top: 0px;
+			text-transform: $low;
 			&:hover {
 				color: $orange;
 			}

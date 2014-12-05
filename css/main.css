@@ -17,118 +17,6 @@
    Mixins
    ========================================================================== */
 /* ==========================================================================
-   Content Styles
-   ========================================================================== */
-/**
- * Paragraphs
- */
-p {
-  font-family: "Crimson Text", serif;
-  color: #333333;
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 10px;
-}
-p a:hover {
-  text-decoration: underline;
-}
-p:first-letter {
-  font-family: "Crimson Text", serif;
-  font-size: 55px;
-  font-weight: bold;
-}
-
-/**
- * Links
- */
-a {
-  color: #cc6600;
-  text-decoration: none;
-}
-
-/* ==========================================================================
-   Headers & Titles
-   ========================================================================== */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 100%;
-  font-family: "Lato", sans-serif;
-  margin-top: 0px;
-  font-weight: normal;
-  color: #333333;
-}
-
-h1 {
-  font-size: 2.8em;
-}
-
-h2 {
-  font-size: 2.6em;
-  margin-bottom: 0px;
-}
-
-h3 {
-  font-size: 2.4em;
-  margin-bottom: 15px;
-  text-decoration: none;
-}
-
-h4 {
-  font-size: 2.2em;
-}
-
-.page-comment h1#page-title {
-  color: #333333;
-}
-
-/**
- * Name of Site & Title of Pages
- */
-#site-name {
-  margin-bottom: 0px;
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-size: 2.8em;
-  margin-top: 40px;
-}
-
-#site-name a {
-  color: #333333;
-}
-
-#site-name a:hover {
-  color: #cc6600;
-}
-
-/**
- * Views Title
- */
-.views-field-title,
-#page-title,
-h2 {
-  text-shadow: 2px 2px 2px #333333;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 0px;
-  font-size: 2.6em;
-  line-height: 100%;
-  margin-bottom: 25px;
-  font-family: "Lato", sans-serif;
-  color: #cc6600;
-  clear: both;
-  font-weight: normal;
-}
-.views-field-title a:hover,
-#page-title a:hover,
-h2 a:hover {
-  color: #333333;
-}
-
-/* ==========================================================================
    Global Page Styles
    ========================================================================== */
 /**
@@ -149,6 +37,94 @@ body {
 }
 
 /**
+ * Paragraphs
+ */
+p {
+  font-family: "Crimson Text", serif;
+  color: #333333;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+p a:hover {
+  text-decoration: underline;
+}
+p:first-child:first-letter {
+  font-family: "Crimson Text", serif;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+/**
+ * Links
+ */
+a {
+  color: #cc6600;
+  text-decoration: none;
+}
+
+/**
+ * Lists
+ */
+ul {
+  padding-left: 25px;
+}
+
+li {
+  padding-bottom: 10px;
+  list-style-type: disc;
+  line-height: 20px;
+}
+
+/* ==========================================================================
+   Headers & Titles
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 100%;
+  font-family: "Lato", sans-serif;
+  margin-top: 0px;
+  font-weight: normal;
+  color: #333333;
+}
+
+h1 {
+  font-size: 44px;
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 41px;
+  font-size: 2.5625rem;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 38px;
+  font-size: 2.375rem;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 35px;
+  font-size: 2.1875rem;
+}
+
+/**
+ * Footer
+ */
+footer {
+  min-height: 115px;
+  height: 100%;
+}
+
+/**
  * Button Spacing
  */
 button,
@@ -156,6 +132,78 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   margin-right: 10px;
+}
+
+/**
+ * Invisible Element
+ */
+.element-invisible {
+  display: none;
+  position: relative;
+}
+
+/**
+ * Select Elements
+ */
+select,
+input {
+  margin-bottom: 15px;
+}
+
+input {
+  cursor: pointer;
+}
+
+.page-comment h1#page-title {
+  color: #333333;
+}
+
+.page-taxonomy h1#page-title {
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+/**
+ * Name of Site & Title of Pages
+ */
+#site-name {
+  margin-bottom: 0px;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-size: 43px;
+  font-size: 2.6875rem;
+  margin-top: 40px;
+}
+#site-name a {
+  color: #333333;
+}
+#site-name a:hover {
+  color: #cc6600;
+}
+
+/**
+ * Views Title
+ */
+.views-field-title,
+#page-title,
+h2 {
+  text-shadow: 2px 2px 2px #333333;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-size: 46px;
+  font-size: 2.875rem;
+  line-height: 115%;
+  margin-bottom: 25px;
+  font-family: "Lato", sans-serif;
+  color: #cc6600;
+  clear: both;
+  font-weight: normal;
+}
+.views-field-title a:hover,
+#page-title a:hover,
+h2 a:hover {
+  color: #333333;
 }
 
 /* ==========================================================================
@@ -176,19 +224,27 @@ header {
 /* ==========================================================================
    Pager Styles
    ========================================================================== */
-/**
- * Full and Mini Pager Styles
- */
 .pager-current {
   color: #333333;
-  font-size: 0.8em;
 }
 
 li[class^='pager-'] {
   text-transform: uppercase;
   padding-right: 0px;
   padding-left: 0px;
-  font-size: 0.8em;
+  font-size: 12px;
+  font-size: 0.75rem;
+  background-color: #dfdfdf;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.item-list ul li {
+  margin-left: 5px;
 }
 
 /* ==========================================================================
@@ -207,9 +263,10 @@ li[class^='pager-'] {
 /**
  * Blockquote
  */
-blockquote {
+blockquote,
+code {
   background-color: #fff7eb;
-  padding: 5px 20px 20px 20px;
+  padding: 30px 20px 20px 20px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -224,21 +281,92 @@ blockquote {
   float: right;
   display: inline;
   margin-right: 3px;
-  background-color: #fff7eb;
+  background-color: none;
   padding: 4px;
-  font-size: 0.8em;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .node-readmore,
 .comment-comments {
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 .node-readmore a:hover,
 .comment-comments a:hover {
   text-decoration: underline;
 }
 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
 /* ==========================================================================
    Image Styles
    ========================================================================== */
@@ -281,11 +409,14 @@ img {
  * Image Style in Content
  */
 .field-item img {
-  float: left;
   max-width: 100%;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  border: 3px solid #cc6600;
+  margin-bottom: 20px;
+  border: 2px solid #cc6600;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /**
@@ -315,13 +446,15 @@ img {
   margin-top: 0px;
 }
 #menu li a {
-  font-size: 1.2em;
-  color: #333333;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  color: #646464;
   padding-right: 8px;
   font-weight: normal;
   font-family: "Crimson Text", serif;
   text-shadow: none;
   margin-top: 0px;
+  text-transform: lowercase;
 }
 #menu li a:hover {
   color: #cc6600;
@@ -330,15 +463,24 @@ img {
 /* ==========================================================================
    Comment Styles
    ========================================================================== */
+.submitted {
+  display: none;
+  font-family: "Crimson Text", serif;
+}
+
 #comments h2 {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 28px;
+  font-size: 1.75rem;
   clear: both;
   margin-top: 40px;
   padding-top: 40px;
 }
 #comments h3 a:hover {
   text-decoration: underline;
+}
+#comments .submitted {
+  display: block;
 }
 
 .comment {
@@ -351,32 +493,22 @@ img {
 }
 .comment p:first-letter {
   font-weight: normal;
-  font-size: 1.0em;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
-/**
- * If you want to include number of comments link and "add new comment" link
- * uncomment this css and comment out the display none below
- */
-/** #block-system-main .comment-add {
-	@extend .field-type-taxonomy-term-reference;
-	padding-left: 0px;
-	margin-top: 30px;
-	text-align:left;
-	background-color: $lo;
-	a {
-		color: $grey;
-		background-color: $lo;
-		font-weight: normal;
-		display:inline;
-		float:left;
-		padding: 3px 3px 3px 5px;
-		&:hover {
-				text-decoration: $line;
-		}
-	}
+.filter-help p {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.filter-help p:first-child:first-letter {
+  font-size: 100%;
+  font-weight: normal;
+}
+.filter-help a:hover {
+  text-decoration: none;
+}
 
-} **/
 #block-system-main .comment-add,
 #block-system-main .comment-comments {
   display: none;
@@ -390,7 +522,9 @@ img {
  */
 .field-type-taxonomy-term-reference {
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-top: 30px;
 }
 .field-type-taxonomy-term-reference .field-label {
   color: #333333;
@@ -398,7 +532,9 @@ img {
   font-weight: normal;
   display: inline;
   float: left;
-  padding: 3px 3px 3px 5px;
+  padding: 3px 3px 3px 8px;
+  border: 1px solid #eee;
+  margin-right: 2px;
 }
 .field-type-taxonomy-term-reference .field-item {
   display: inline;
@@ -410,17 +546,13 @@ img {
   text-decoration: underline;
 }
 
-.page-taxonomy h2 {
-  margin-top: 45px;
-  font-size: 2.0em;
-}
-
 /**
  * Date Styles
  */
 .field-type-datetime {
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .field-type-datetime .field-label {
   display: none;
@@ -431,6 +563,7 @@ img {
   float: right;
   margin-right: 5px;
   padding: 3px;
+  border: 1px solid #eee;
 }
 
 /* ==========================================================================
@@ -439,9 +572,12 @@ img {
 /* ==========================================================================
    Admin Theme Styles
    ========================================================================== */
-.submitted,
 #block-system-main .comment_forbidden {
   display: none;
+}
+
+h2.styleguide {
+  text-shadow: none;
 }
 
 /* ==========================================================================
@@ -449,13 +585,15 @@ img {
    ========================================================================== */
 @media (max-width: 550px) {
   p {
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 32px;
     padding: 0px 15px 0px 15px;
   }
 
   p:first-letter {
     font-size: 35px;
+    font-size: 2.1875rem;
   }
 
   blockquote {
@@ -466,16 +604,18 @@ img {
   .view h2,
   #page-title,
   h2 {
-    font-size: 2.4em;
+    font-size: 38px;
+    font-size: 2.375rem;
   }
 
   h2 {
-    font-size: 2.4em;
-    margin-bottom: 0px;
+    font-size: 38px;
+    font-size: 2.375rem;
   }
 
   h3 {
-    font-size: 1.8em;
+    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   #site-info {
@@ -552,6 +692,11 @@ img {
 
   #feed {
     text-align: center;
+  }
+
+  #top-bar {
+    height: 2px;
+    background-color: #cc6600;
   }
 }
 @media (min-width: 551px) and (max-width: 786px) {

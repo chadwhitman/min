@@ -41,11 +41,10 @@ img {
  * Image Style in Content
  */
 .field-item img {
-	float:left;
 	max-width: 100%;
-	margin-right: 25px;
-	margin-bottom: 10px;
-	border: 3px solid $orange;
+	margin-bottom: 20px;
+	border: 2px solid $orange;
+	@include border-radius(5px);
 }
 
 /**

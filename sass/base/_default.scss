@@ -1,6 +1,23 @@
 /* ==========================================================================
-   Content Styles
+   Global Page Styles
    ========================================================================== */
+
+/**
+ * HTML
+ */
+html,
+body {
+	height: 100%;
+}
+
+/**
+ * Body
+ */
+body {
+	max-width: 765px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
 
 /**
  * Paragraphs
@@ -8,16 +25,18 @@
 p {
 	font-family: $crimson;
 	color: $grey;
-	font-size: 24px;
-	line-height: 28px;
+	@include font-size(26px);
+	line-height: 32px;
 	margin-bottom: 10px;
 	a:hover {
 		text-decoration: $line;
 	}
-	&:first-letter {
-		font-family: $crimson;
-		font-size: 55px;
-		font-weight: bold;
+	&:first-child {
+		&:first-letter {
+			font-family: $crimson;
+			font-size: 55px;
+			font-weight: bold;
+		}
 	}
 }
 
@@ -27,6 +46,19 @@ p {
 a {
 	color: $orange;
 	text-decoration: none;
+}
+
+/**
+ * Lists
+ */
+ul {
+	padding-left: 25px;
+} 
+ 
+li {
+	padding-bottom:10px;
+	list-style-type: disc;
+	line-height: 20px;
 }
 
 /* ==========================================================================
@@ -47,27 +79,70 @@ h6 {
 }
 
 h1 {
-	font-size: 2.8em;
+	@include font-size(44px);
 }
 
 h2 {
-	font-size: 2.6em;
+	@include font-size(41px);
 	@extend #page-title;
 	margin-bottom: 0px;
 }
 
 h3 {
-	font-size: 2.4em;
+	@include font-size(38px);
   	margin-bottom: 15px;
   	text-decoration: none;
 }
 
 h4 {
-	font-size: 2.2em;
+	@include font-size(35px);
+}
+
+/**
+ * Footer
+ */
+footer {
+	min-height:115px;
+	height:100%;
+}	
+
+/**
+ * Button Spacing
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	margin-right: 10px;
+}
+
+/**
+ * Invisible Element
+ */
+.element-invisible {
+	display: none;
+	position:relative;
+}
+
+/**
+ * Select Elements
+ */
+select,
+input {
+	margin-bottom: 15px;
+}
+
+input {
+	cursor: pointer;
 }
 
 .page-comment h1#page-title {
 	color: $grey;
+}
+
+.page-taxonomy h1#page-title {
+	color: $grey;
+	margin-bottom: 25px;
 }
 
 /**
@@ -77,16 +152,14 @@ h4 {
 	margin-bottom: 0px;
 	font-family: $crimson;
 	font-weight: 700;
-	font-size: 2.8em;
+	@include font-size(43px);
 	margin-top: 40px;
-}
-
-#site-name a {
-	color: $grey;
-}
-
-#site-name a:hover {
-	color: $orange;
+	a {
+		color: $grey;
+		&:hover {
+			color: $orange;
+		}
+	}
 }
 
 /**
@@ -98,8 +171,8 @@ h4 {
 	text-align:center;
 	text-transform: $up;
 	margin-top: 0px;
-	font-size: 2.6em;
-	line-height: 100%;
+	@include font-size(46px);
+	line-height: 115%;
 	margin-bottom: 25px;
 	font-family: $lato;
 	color: $orange;

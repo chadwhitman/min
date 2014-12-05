@@ -1,96 +1,102 @@
-Min Theme: A Personal Blog theme for Drupal 7 //
-Description: Min is a minimal, responsive, single-column, content based theme. //
-Uses: HTML5 Boilerplate, SASS/SCSS, Normalize.css
---------------------------------------------
+#### Contents of this file
 
-OVERVIEW
----------------------
+	- Introduction
+	- Required Modules
+	- Installation
+	- Configuration:
+		- Default theme settings
+		- Article post settings
+		- Article image settings
+		- Adding pages to the menu
+		- Adding Google Analytics
+		- Troubleshooting & FAQ
+	- Maintainers
 
-Min theme is designed for the purpose of being a personal blog that looks and functions like the demo image found here "/demo-image/demo-screenshot.png."
+#### Introduction
 
-Min theme is not a "base theme" or "starter theme," in that it has been designed to be easily transformed into any kind of website.
+Min is a single-column, minimalist, content-focused 
+theme for Drupal 7. This theme is geared towards content 
+creators who are looking for a blogging theme that requires 
+relatively few customizations or extra modules to get started.
 
-You can use the default "Article" content type to start posting blogs or you can create your own content type and
-view page and set the homepage (via the site configuration) to your view page's url.
+#### Features
 
-I'd recommend setting the teaser body field to 1200 characters, which you can find
-at this url "/admin/structure/types/manage/article/display/teaser."
+	- Single-column.
+	- Responsive.
+	- Minimalist, clean design.
+	- Content-centered.
+	- HTML5 / CSS3 based.
+	- SASS/SCSS integration.
+	- Google font integration.
+	- Support for standard Drupal theme features like 
+  site-logo, site name, comments and RSS feed.
 
+#### Required Modules
 
-DISABLE THE OVERLAY TO USE THE HELP URLS IN THIS README FILE
----------------------
+##### The Date module is required
 
-On the admin toolbar, click "Modules."
+  - Date (https://www.drupal.org/project/date)
 
-In the Core section, disable the Overlay module.
+#### Installation
 
-Click Save Configuration.
-
-
-INSTALLING MIN
-----------------------
-
-Download the Min theme.
-
-Unzip and place in your site's "sites/all/themes" directory.
-
-Log into your site and go to the "Appearance" page (url: "/admin/appearance") -  Min should be listed.
-
-Click the 'Enable and set default' link for Min.
-
-
-REMOVING BLOCKS FROM HOMEPAGE
-----------------------
-
-On the admin toolbar, click "Structure," then click "Blocks."
-
-To remove a block from a region, in the region drop-down list, select the "None" option.
+Install as you would normally install a contributed Drupal theme. See:
+https://www.drupal.org/getting-started/install-contrib/themes for further
+instructions.
 
 
-MODULES REQUIRED IF YOU WANT TO ADD A DATE TO EACH POST
-----------------------
+#### Configuration
 
-Date: http://drupal.org/project/date
+##### Default Theme Settings
 
-Unzip the module and place it in your site's "sites/all/modules" directory.
+  - Custom Logo/Portrait: In the admin menu, click "Appearance," then "settings" 
+    under the Min theme. Find the "Logo Image Settings" option. 
+    Uncheck "Use the default logo." Upload your custom image.
+  - Site Name & Number of Posts: In the admin menu, click "Configuration," 
+    then click on the item called "Site information." Set preferences.
+  - Remove default blocks from homepage: In the admin menu, click "Structure," 
+    then click "Blocks." In the region drop-down list, select the "None" option
+    for the block you want moved.
 
-Enable the module on the Module page. (url: "/admin/modules")
+##### Article Post Settings
 
-Once the module is enabled, click on the admin menu item "Structure," then click the "Content Types" option.
+  - Article: You can use Drupal's default "Article" content type to start 
+    creating posts. (This content type includes a tag field and an image 
+    upload field)
+  - Date field: If you use the date module, you should create a new field 
+    in the Article content type; use the "Date" option from the field-type 
+    drop-down list. Set the date field display to "short" in both default 
+    and teaser displays.
+  
+##### Article Post Image Settings
 
-Click on the "manage fields" item in the "Article" row.
+  - In the Article content type, set the display on both the teaser and 
+    default view for the image field to "None (original size)," so that 
+    no cropping or scaling occurs.
 
-Add a new field label, type and widget for the Date field. (url: "admin/structure/types/manage/article/fields")
+##### Adding pages to menu
 
-You can also manage the display of the "Article" fields here: "admin/structure/types/manage/article/display."
+  - When you create a new page, click the "Provide a menu link" checkbox at the 
+    bottom of the page form.
 
+##### Google Analytics
 
-CHANGING THE DEFAULT LOGO
-----------------------
+  - You can add your Google Analytics ID & Code to the 'html.tpl.php' template file.
 
-In Min's theme settings (url: "/admin/appearance/settings/min"), find the "Logo Image Settings" option.
+#### Troubleshooting & FAQ
 
-Uncheck "Use the default logo."
+- Ideally, you will only want to add a maximum of three to four menu items;
+  the more you add, the more it might look squished on mobile devices.
 
-Upload your custom image.
+- If you create your new date field using the date module, you will probably 
+  want to uncheck seconds, minutes and hours from the 
+  date-attributes-to-collect option.
+  
+- Your date field may default to "hidden" in teaser view. In 
+  the "manage display" option for the date field simply move the field out of 
+  the hidden section and into the display section.
+  
+#### Maintainers
 
+##### Current maintainers
 
-SETTING YOUR SITE's NAME & NUMBER OF POSTS PER PAGE
-----------------------
-
-Click on the admin menu item "Configuration," then click on the item called "Site information." (url: "/admin/config/system/site-information")
-
-Here you can input your Site's Name, Slogan (which will show in the browser's heading title), and set
-the number of posts per page.
-
-
-ADDING A POST
-----------------------
-
-Click on the admin menu item "Add Content," then click on the item called "Article."
-
-
-GOOGLE ANALYTICS
-----------------------
-
-You can add your Google Analytics ID in the html.tpl.php template file.
+	- Chad Whitman - https://www.drupal.org/u/chadwhitman
