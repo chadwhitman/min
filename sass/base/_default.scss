@@ -71,8 +71,8 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: 100%;
-    font-family: $lato;
+  line-height: 100%;
+  font-family: $lato;
 	margin-top: 0px;
 	font-weight: normal;
 	color: $grey;
@@ -180,5 +180,18 @@ input {
 	font-weight: normal;
 	a:hover {
 		color: $grey;
+	}
+}
+
+ul#secondary-menu {
+	padding-left: 0px;
+	li {
+		list-style-type: none;
+		display: inline-block;
+		text-transform: uppercase;
+		margin-right: 10px;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }

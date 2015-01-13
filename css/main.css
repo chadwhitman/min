@@ -206,6 +206,19 @@ h2 a:hover {
   color: #333333;
 }
 
+ul#secondary-menu {
+  padding-left: 0px;
+}
+ul#secondary-menu li {
+  list-style-type: none;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+ul#secondary-menu li:hover {
+  text-decoration: underline;
+}
+
 /* ==========================================================================
    Header Styles
    ========================================================================== */
@@ -219,6 +232,15 @@ header {
 #site-info {
   float: left;
   padding-top: 10px;
+}
+
+#site-slogan {
+  color: #cc6600;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-bottom: 7px;
 }
 
 /* ==========================================================================
@@ -278,13 +300,26 @@ code {
  * Readmore & Comments
  */
 #block-system-main .node-readmore {
-  float: right;
-  display: inline;
-  margin-right: 3px;
-  background-color: none;
-  padding: 4px;
+  text-transform: uppercase;
   font-size: 12px;
   font-size: 0.75rem;
+  color: #333333;
+  margin-top: 0px;
+  background-color: #fff7eb;
+  font-weight: normal;
+  display: inline;
+  float: right;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: 1px solid #eee;
+  margin-right: 3px;
+}
+#block-system-main .node-readmore:hover {
+  background-color: #cc6600;
+}
+#block-system-main .node-readmore:hover a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .node-readmore,
@@ -534,16 +569,34 @@ img {
   float: left;
   padding: 3px 3px 3px 8px;
   border: 1px solid #eee;
-  margin-right: 2px;
+  margin-right: 3px;
 }
 .field-type-taxonomy-term-reference .field-item {
   display: inline;
   float: left;
-  margin-right: 5px;
-  padding: 3px;
+  margin-right: 3px;
+  padding: 0px;
 }
 .field-type-taxonomy-term-reference .field-item:hover {
   text-decoration: underline;
+}
+
+.field-type-taxonomy-term-reference a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #cc6600;
+  margin-top: 0px;
+  background-color: #fff7eb;
+  font-weight: normal;
+  display: inline;
+  float: left;
+  padding: 3px 3px 3px 3px;
+  border: 1px solid #eee;
+}
+.field-type-taxonomy-term-reference a:hover {
+  background-color: #cc6600;
+  color: #fff;
 }
 
 /**

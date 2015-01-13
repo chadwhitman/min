@@ -5,7 +5,7 @@
 /**
  * Tag Styles
  */
-.field-type-taxonomy-term-reference  {
+.field-type-taxonomy-term-reference {
 	text-transform: $up;
 	@include font-size(12px);
 	margin-top: 30px;
@@ -17,17 +17,34 @@
 			float:left;
 			padding: 3px 3px 3px 8px;
 			border: 1px solid #eee;
-			margin-right: 2px;
+			margin-right: 3px;
 		}
 		.field-item {
 			display: inline;
 			float:left;
-			margin-right: 5px;
-			padding: 3px;
+			margin-right: 3px;
+			padding: 0px;
 			&:hover {
 				text-decoration: $line;
 			}
 		}
+}
+
+.field-type-taxonomy-term-reference a {
+	text-transform: $up;
+	@include font-size(12px);
+	color: $orange;
+	margin-top: 0px;
+	background-color: $lo;
+	font-weight: normal;
+	display:inline;
+	float:left;
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #eee;
+	&:hover {
+		background-color: $orange;
+		color: #fff;
+	}
 }
 
 /**

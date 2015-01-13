@@ -20,6 +20,7 @@
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
               <span><?php print $site_name; ?></span></a>
           </h1>
+          <h6 id="site-slogan"><span><?php print $site_slogan; ?></span></h6>
         <?php endif; ?>
         <div id="menu">
           <?php
@@ -58,5 +59,8 @@
      </div> <!-- /#main -->
    <footer>  
    	<?php print render($page['footer']); ?>
+   	<?php if ($secondary_menu): ?>
+   	  <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu'))); ?>
+   	<?php endif; ?>
    </footer>
 </div> <!-- /#page -->

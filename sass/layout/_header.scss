@@ -13,3 +13,11 @@ header {
 	float: left;
 	padding-top: 10px;
 }
+
+#site-slogan {
+	color: $orange;
+	@include font-size(14px);
+	text-transform: uppercase;
+	padding-top: 2px;
+	padding-bottom: 7px;
+}

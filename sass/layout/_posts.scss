@@ -26,12 +26,25 @@ code {
  * Readmore & Comments
  */
 #block-system-main .node-readmore {
-	float:right;
-	display: inline;
-	margin-right: 3px;
-	background-color: none;
-	padding: 4px;
+	text-transform: $up;
 	@include font-size(12px);
+	color: $grey;
+	margin-top: 0px;
+	background-color: $lo;
+	font-weight: normal;
+	display:inline;
+	float:right;
+	padding-left: 3px;
+	padding-right: 3px;
+	border: 1px solid #eee;
+	margin-right: 3px;
+	&:hover {
+		background-color: $orange;
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
 }
 
 .node-readmore,
