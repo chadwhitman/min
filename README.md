@@ -33,6 +33,8 @@ Features:
   
 Example: http://mintheme.net
 
+Current Drupal Sandbox: https://www.drupal.org/sandbox/c-whitman/2157739
+
 REQUIRED MODULES
 ---------------------
 
