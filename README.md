@@ -30,6 +30,8 @@ Features:
 * Google font integration.
 * Support for standard Drupal theme features like 
   site-logo, site name, comments and RSS feed.
+  
+Example: http://mintheme.net
 
 REQUIRED MODULES
 ---------------------
