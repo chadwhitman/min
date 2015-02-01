@@ -16,8 +16,9 @@ header {
 
 #site-slogan {
 	color: $orange;
-	@include font-size(14px);
+	font-family: $robo;
+	@include font-size(16px);
 	text-transform: uppercase;
-	padding-top: 2px;
-	padding-bottom: 7px;
+	padding-top: 3px;
+	padding-bottom: 0px;
 }

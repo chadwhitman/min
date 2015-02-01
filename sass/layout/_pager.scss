@@ -11,9 +11,12 @@ li[class^='pager-'] {
 	padding-right: 0px;
 	padding-left: 0px;
 	@include font-size(12px);
-	background-color: #dfdfdf;
 	border: 1px solid #ccc;
 	@include border-radius(6px);
+}
+
+.item-list .pager {
+	margin-top: 65px;
 }
 
 .item-list ul li {

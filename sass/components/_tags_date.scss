@@ -10,14 +10,7 @@
 	@include font-size(12px);
 	margin-top: 30px;
 		.field-label {
-			color: $grey;
-			background-color: $lo;
-			font-weight: normal;
-			display:inline;
-			float:left;
-			padding: 3px 3px 3px 8px;
-			border: 1px solid #eee;
-			margin-right: 3px;
+			display: none;
 		}
 		.field-item {
 			display: inline;
@@ -30,20 +23,32 @@
 		}
 }
 
-.field-type-taxonomy-term-reference a {
+.field-type-taxonomy-term-reference a,
+.node-article .field-type-text .field-items {
 	text-transform: $up;
-	@include font-size(12px);
+	@include font-size(20px);
+	line-height: 20px;
 	color: $orange;
 	margin-top: 0px;
 	background-color: $lo;
 	font-weight: normal;
 	display:inline;
 	float:left;
-	padding: 3px 3px 3px 3px;
+	font-family: $med;
+	padding: 4px;
 	border: 1px solid #eee;
 	&:hover {
 		background-color: $orange;
 		color: #fff;
+	}
+}
+
+.node-article .field-type-text .field-items {
+	float:right;
+	color: #000;
+	&:hover {
+		background: $lo;
+		color: #000;
 	}
 }
 
@@ -52,16 +57,17 @@
  */
 .field-type-datetime {
 	text-transform: $up;
-	@include font-size(14px);
+	@include font-size(20px);
 	.field-label {
 		display: none;
 	}
 	.field-item {
 			background-color: $lo;
+			font-family: $med;
 			display: inline;
 			float:right;
 			margin-right: 5px;
-			padding: 3px;
+			padding: 4px;
 			border: 1px solid #eee;
 	}
 }

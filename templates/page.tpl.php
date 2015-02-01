@@ -5,34 +5,37 @@
  */
 ?>
 <header role="banner" class="clearfix">
-  <div id="logo">
-    <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-       <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
+  <?php if ($logo): ?>
+	  <div id="logo">
+	    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+	      <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+	    </a>
+	  </div>
+  <?php endif; ?>
+  <?php if ($site_name || $site_slogan): ?>
+	  <div id="site-info">
+	    <hgroup id="name-and-slogan">
+	      <?php if ($site_name): ?>
+	        <h1 id="site-name">
+	          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+	          <span><?php print $site_name; ?></span></a>
+	        </h1>
+	      <?php endif; ?>
+	      <?php if ($site_slogan): ?>
+	        <h6 id="site-slogan"><span><?php print $site_slogan; ?></span></h6>
+	      <?php endif; ?>
+	        <div id="menu">
+	          <?php
+              print theme('links__system_main_menu', array(
+              'links' => $main_menu,
+              'attributes' => array(
+                'class' => array('links', 'inline', 'clearfix'),
+              ),
+            )); ?>
+	        </div>
+	    </hgroup>
+	  </div>
     <?php endif; ?>
-  </div>
-  <div id="site-info">
-    <?php if ($site_name || $site_slogan): ?>
-      <hgroup id="name-and-slogan">
-        <?php if ($site_name): ?>
-          <h1 id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-              <span><?php print $site_name; ?></span></a>
-          </h1>
-          <h6 id="site-slogan"><span><?php print $site_slogan; ?></span></h6>
-        <?php endif; ?>
-        <div id="menu">
-          <?php
-           print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'class' => array('links', 'inline', 'clearfix'),
-            ),
-          )); ?>
-     </hgroup>
-    <?php endif; ?>
-  </div>
   <?php print render($page['header']); ?>
 </header> <!-- /header -->
 <div id="page">
@@ -54,13 +57,13 @@
                 <?php endif; ?>
                 <?php print render($page['content']); ?>
                 <div id="feed"><?php print $feed_icons; ?></div>
-        </div> <!-- /main -->
+        </div><!-- /main -->
         <?php print render($page['sidebar_second']); ?>
-     </div> <!-- /#main -->
+    </div> <!-- /#main -->
    <footer>  
-   	<?php print render($page['footer']); ?>
-   	<?php if ($secondary_menu): ?>
-   	  <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu'))); ?>
-   	<?php endif; ?>
+   <?php print render($page['footer']); ?>
+   <?php if ($secondary_menu): ?>
+   	<?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu'))); ?>
+   <?php endif; ?>
    </footer>
-</div> <!-- /#page -->
+</div><!-- /#page -->

@@ -27,15 +27,16 @@ code {
  */
 #block-system-main .node-readmore {
 	text-transform: $up;
-	@include font-size(12px);
+	@include font-size(20px);
 	color: $grey;
 	margin-top: 0px;
+	line-height:20px;
 	background-color: $lo;
+	font-family: $med;
 	font-weight: normal;
 	display:inline;
 	float:right;
-	padding-left: 3px;
-	padding-right: 3px;
+	padding: 4px;
 	border: 1px solid #eee;
 	margin-right: 3px;
 	&:hover {

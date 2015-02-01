@@ -1,7 +1,7 @@
 CONTENTS OF THIS FILE
 ---------------------
 * Introduction
-* Required Modules
+* Recommended Modules
 * Installation
 * Configuration for:
 	* Default theme settings
@@ -9,7 +9,7 @@ CONTENTS OF THIS FILE
 	* Article image settings
 	* Adding pages to the menu
 	* Adding Google Analytics
-* Troubleshooting & FAQ
+* Troubleshooting
 * Maintainers
 
 INTRODUCTION
@@ -25,20 +25,20 @@ Features:
 * Responsive.
 * Minimalist, clean design.
 * Content-centered.
-* HTML5 / CSS3 based.
-* SASS/SCSS integration.
+* HTML5 & CSS3 based.
+* SASS integration.
 * Google font integration.
 * Support for standard Drupal theme features like 
-  site-logo, site name, comments and RSS feed.
-  
-Example: http://mintheme.net
+  site-logo, site-slogan, site-name, comments and RSS feed.
 
-Current Drupal Sandbox: https://www.drupal.org/sandbox/c-whitman/2157739
+Demo: http://mintheme.net
 
-REQUIRED MODULES
+Drupal Sandbox: https://www.drupal.org/sandbox/c-whitman/2157739
+
+RECOMMENDED MODULES
 ---------------------
 
-The Date module is required
+The Date module not required, but recommended for creating date fields
   * Date (https://www.drupal.org/project/date)
 
 INSTALLATION
@@ -64,12 +64,12 @@ CONFIGURATION
 
 * Article Post Settings
   * Article: You can use Drupal's default "Article" content type to start 
-    creating posts. (This content type includes a tag field and an image 
-    upload field)
+    creating posts. This content type includes a tag field and an image 
+    upload field.
   * Date field: If you use the date module, you should create a new field 
-    in the Article content type; use the "Date" option from the field-type 
+    in the Article content type. Use the "Date" option from the field-type 
     drop-down list. Set the date field display to "short" in both default 
-    and teaser displays.
+    and teaser displays. Uncheck seconds, minutes and hours.
   
 * Article Post Image Settings
   * In the Article content type, set the display on both the teaser and 
@@ -80,22 +80,25 @@ CONFIGURATION
   * When you create a new page, click the "Provide a menu link" checkbox at the 
     bottom of the page form.
 
-* Google Analytics
-  * You can add your Google Analytics ID in the 'html.tpl.php' template file.
-
-TROUBLESHOOTING & FAQ
+Troubleshooting & Other Recommendations
 ---------------------
 
 * Ideally, you will only want to add a maximum of three to four menu items;
   the more you add, the more it might look squished on mobile devices.
-
-* If you create your new date field using the date module, you will probably 
-  want to uncheck seconds, minutes and hours from the 
-  date-attributes-to-collect option.
+  
+*	You may want to set the length on the teaser-display to around 300 
+  characters.
+  
+* If you create your new date field using the date module, you should
+	uncheck seconds, minutes and hours from the date-attributes-to-collect 
+	option.
   
 * Your date field may default to "hidden" in teaser view. In 
   the "manage display" option for the date field simply move the field out of 
   the hidden section and into the display section.
+  
+* Though the option for a second menu is possible (it displays in the footer), 
+  I would recommend just using the main menu.
   
 MAINTAINERS
 ---------------------

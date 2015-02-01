@@ -5,12 +5,9 @@
 # Location of the theme's resources.
 css_dir         = "css"
 sass_dir        = "sass"
-extensions_dir  = "sass-extensions"
-images_dir      = "images"
-javascripts_dir = "js"
 
 # Production or Develoment Environment
-environment = :development
+environment = :production
 
 # Sass Comments
 line_comments = false

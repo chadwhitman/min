@@ -34,25 +34,28 @@ body {
   max-width: 765px;
   margin: 0 auto;
   overflow-x: hidden;
+  font-family: "Roboto Slab", serif;
 }
 
 /**
  * Paragraphs
  */
 p {
-  font-family: "Crimson Text", serif;
-  color: #333333;
-  font-size: 26px;
-  font-size: 1.625rem;
-  line-height: 32px;
-  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+  color: #000;
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 36px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  word-break: break-word;
 }
 p a:hover {
   text-decoration: underline;
 }
 p:first-child:first-letter {
-  font-family: "Crimson Text", serif;
-  font-size: 55px;
+  font-family: "Roboto Slab", serif;
+  font-size: 44px;
   font-weight: bold;
 }
 
@@ -72,9 +75,11 @@ ul {
 }
 
 li {
+  font-size: 25px;
+  font-size: 1.5625rem;
   padding-bottom: 10px;
   list-style-type: disc;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 /* ==========================================================================
@@ -87,7 +92,7 @@ h4,
 h5,
 h6 {
   line-height: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: "Medula One", cursive;
   margin-top: 0px;
   font-weight: normal;
   color: #333333;
@@ -105,15 +110,28 @@ h2 {
 }
 
 h3 {
-  font-size: 38px;
-  font-size: 2.375rem;
-  margin-bottom: 15px;
+  font-size: 52px;
+  font-size: 3.25rem;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
 h4 {
-  font-size: 35px;
-  font-size: 2.1875rem;
+  font-size: 36px;
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 31px;
+  font-size: 1.9375rem;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  margin-bottom: 10px;
 }
 
 /**
@@ -168,10 +186,9 @@ input {
  */
 #site-name {
   margin-bottom: 0px;
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-size: 43px;
-  font-size: 2.6875rem;
+  font-family: "Medula One", cursive;
+  font-size: 50px;
+  font-size: 3.125rem;
   margin-top: 40px;
 }
 #site-name a {
@@ -191,11 +208,11 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0px;
-  font-size: 46px;
-  font-size: 2.875rem;
-  line-height: 115%;
+  font-size: 67px;
+  font-size: 4.1875rem;
+  line-height: 112%;
   margin-bottom: 25px;
-  font-family: "Lato", sans-serif;
+  font-family: "Medula One", cursive;
   color: #cc6600;
   clear: both;
   font-weight: normal;
@@ -206,16 +223,17 @@ h2 a:hover {
   color: #333333;
 }
 
-ul#secondary-menu {
+#secondary-menu {
   padding-left: 0px;
 }
-ul#secondary-menu li {
+#secondary-menu li {
   list-style-type: none;
   display: inline-block;
-  text-transform: uppercase;
   margin-right: 10px;
+  font-size: 15px;
+  font-size: 0.9375rem;
 }
-ul#secondary-menu li:hover {
+#secondary-menu li:hover {
   text-decoration: underline;
 }
 
@@ -236,11 +254,12 @@ header {
 
 #site-slogan {
   color: #cc6600;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
-  padding-top: 2px;
-  padding-bottom: 7px;
+  padding-top: 3px;
+  padding-bottom: 0px;
 }
 
 /* ==========================================================================
@@ -256,13 +275,16 @@ li[class^='pager-'] {
   padding-left: 0px;
   font-size: 12px;
   font-size: 0.75rem;
-  background-color: #dfdfdf;
   border: 1px solid #ccc;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
+}
+
+.item-list .pager {
+  margin-top: 65px;
 }
 
 .item-list ul li {
@@ -301,16 +323,17 @@ code {
  */
 #block-system-main .node-readmore {
   text-transform: uppercase;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   color: #333333;
   margin-top: 0px;
+  line-height: 20px;
   background-color: #fff7eb;
+  font-family: "Medula One", cursive;
   font-weight: normal;
   display: inline;
   float: right;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding: 4px;
   border: 1px solid #eee;
   margin-right: 3px;
 }
@@ -447,11 +470,11 @@ img {
   max-width: 100%;
   margin-bottom: 20px;
   border: 2px solid #cc6600;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
 
 /**
@@ -471,7 +494,7 @@ img {
  * Main Menu Styles
  */
 #menu {
-  font-family: "Crimson Text", serif;
+  font-family: "Roboto Slab", serif;
   color: #333333;
   width: 100%;
   text-align: left;
@@ -486,7 +509,7 @@ img {
   color: #646464;
   padding-right: 8px;
   font-weight: normal;
-  font-family: "Crimson Text", serif;
+  font-family: "Roboto Slab", serif;
   text-shadow: none;
   margin-top: 0px;
   text-transform: lowercase;
@@ -500,13 +523,13 @@ img {
    ========================================================================== */
 .submitted {
   display: none;
-  font-family: "Crimson Text", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 #comments h2 {
   text-align: center;
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 46px;
+  font-size: 2.875rem;
   clear: both;
   margin-top: 40px;
   padding-top: 40px;
@@ -525,11 +548,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   word-wrap: break-word;
-}
-.comment p:first-letter {
-  font-weight: normal;
-  font-size: 16px;
-  font-size: 1rem;
+  margin-top: 20px;
 }
 
 .filter-help p {
@@ -562,14 +581,7 @@ img {
   margin-top: 30px;
 }
 .field-type-taxonomy-term-reference .field-label {
-  color: #333333;
-  background-color: #fff7eb;
-  font-weight: normal;
-  display: inline;
-  float: left;
-  padding: 3px 3px 3px 8px;
-  border: 1px solid #eee;
-  margin-right: 3px;
+  display: none;
 }
 .field-type-taxonomy-term-reference .field-item {
   display: inline;
@@ -581,22 +593,35 @@ img {
   text-decoration: underline;
 }
 
-.field-type-taxonomy-term-reference a {
+.field-type-taxonomy-term-reference a,
+.node-article .field-type-text .field-items {
   text-transform: uppercase;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 20px;
   color: #cc6600;
   margin-top: 0px;
   background-color: #fff7eb;
   font-weight: normal;
   display: inline;
   float: left;
-  padding: 3px 3px 3px 3px;
+  font-family: "Medula One", cursive;
+  padding: 4px;
   border: 1px solid #eee;
 }
-.field-type-taxonomy-term-reference a:hover {
+.field-type-taxonomy-term-reference a:hover,
+.node-article .field-type-text .field-items:hover {
   background-color: #cc6600;
   color: #fff;
+}
+
+.node-article .field-type-text .field-items {
+  float: right;
+  color: #000;
+}
+.node-article .field-type-text .field-items:hover {
+  background: #fff7eb;
+  color: #000;
 }
 
 /**
@@ -604,18 +629,19 @@ img {
  */
 .field-type-datetime {
   text-transform: uppercase;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 .field-type-datetime .field-label {
   display: none;
 }
 .field-type-datetime .field-item {
   background-color: #fff7eb;
+  font-family: "Medula One", cursive;
   display: inline;
   float: right;
   margin-right: 5px;
-  padding: 3px;
+  padding: 4px;
   border: 1px solid #eee;
 }
 
@@ -638,37 +664,44 @@ h2.styleguide {
    ========================================================================== */
 @media (max-width: 550px) {
   p {
-    font-size: 25px;
-    font-size: 1.5625rem;
-    line-height: 32px;
-    padding: 0px 15px 0px 15px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30px;
+    padding: 0px 10px 0px 10px;
   }
 
-  p:first-letter {
+  p:first-child:first-letter {
+    font-family: "Roboto Slab", serif;
     font-size: 35px;
-    font-size: 2.1875rem;
+    font-weight: bold;
   }
 
   blockquote {
     margin: 10px;
   }
 
+  .field-content,
+  .views-row,
+  .node-article,
+  .node-posts {
+    margin-bottom: 15%;
+  }
+
+  ul#secondary-menu {
+    padding-left: 12px;
+  }
+
   .views-field-title,
   .view h2,
   #page-title,
   h2 {
-    font-size: 38px;
-    font-size: 2.375rem;
+    font-size: 52px;
+    font-size: 3.25rem;
   }
 
   h2 {
-    font-size: 38px;
-    font-size: 2.375rem;
-  }
-
-  h3 {
-    font-size: 28px;
-    font-size: 1.75rem;
+    font-size: 52px;
+    font-size: 3.25rem;
   }
 
   #site-info {
@@ -702,6 +735,11 @@ h2.styleguide {
     margin-bottom: 50px;
   }
 
+  .comment ul.links.inline a {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+
   .content {
     padding-left: 10px;
     padding-right: 10px;
@@ -713,6 +751,15 @@ h2.styleguide {
 
   #block-system-main .comment-comments {
     display: none;
+  }
+
+  .comment h3 {
+    font-size: 35px;
+    font-size: 2.1875rem;
+  }
+
+  .comment p {
+    margin-bottom: 10px;
   }
 
   #block-system-main .comment-add {
@@ -729,6 +776,11 @@ h2.styleguide {
 
   #comments h2.title {
     margin-bottom: 25px;
+  }
+
+  #comments {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   input {
