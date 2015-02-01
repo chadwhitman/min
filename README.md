@@ -17,13 +17,13 @@ INTRODUCTION
 
 Min is a single-column, minimalist, content-focused 
 theme for Drupal 7. This theme is geared towards content 
-creators who are looking for a blogging theme that requires 
+creators who are looking for a lightweight blogging theme that requires 
 relatively few customizations or extra modules to get started.
 
 Features:
 * Single-column.
 * Responsive.
-* Minimalist, clean design.
+* Clean design.
 * Content-centered.
 * HTML5 & CSS3 based.
 * SASS integration.
