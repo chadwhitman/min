@@ -8,7 +8,6 @@ CONTENTS OF THIS FILE
 	* Article post settings
 	* Article image settings
 	* Adding pages to the menu
-	* Adding Google Analytics
 * Troubleshooting
 * Maintainers
 
