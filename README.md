@@ -23,11 +23,12 @@ relatively few customizations or extra modules to get started.
 Features:
 * Single-column.
 * Responsive.
-* Clean design.
-* Content-centered.
-* HTML5 & CSS3 based.
-* SASS integration.
-* Google font integration.
+* Clean, minimalist design.
+* Content-focused.
+* HTML5 & CSS3.
+* SASS.
+* Google fonts.
+* Create blog posts out-of-the-box as Min utilizes Drupal's default Article content-type which already includes the   ability to create tags and upload images.
 * Support for standard Drupal theme features like 
   site-logo, site-slogan, site-name, comments and RSS feed.
 
