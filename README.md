@@ -19,6 +19,8 @@ theme for Drupal 7. This theme is geared towards content
 creators who are looking for a lightweight blogging theme that requires 
 relatively few customizations to get started.
 
+Create blog posts out-of-the-box as Min utilizes Drupal's default Article content-type which already includes the   ability to create tags and upload images.
+
 Features:
 * Single-column.
 * Responsive.
@@ -27,13 +29,12 @@ Features:
 * HTML5 & CSS3.
 * SASS.
 * Google fonts.
-* Create blog posts out-of-the-box as Min utilizes Drupal's default Article content-type which already includes the   ability to create tags and upload images.
 * Support for standard Drupal theme features like 
   site-logo, site-slogan, site-name, comments and RSS feed.
 
 Demo: http://mintheme.net
 
-Drupal Sandbox: https://www.drupal.org/sandbox/c-whitman/2157739
+Drupal Project Page: https://www.drupal.org/project/min
 
 RECOMMENDED MODULES
 ---------------------
