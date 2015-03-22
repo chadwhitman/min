@@ -33,3 +33,10 @@ features[] = secondary_menu
 ; Feature Settings
 settings[toggle_slogan] = 0
 settings[toggle_secondary_menu] = 0
+
+; Information added by Drupal.org packaging script on 2015-02-03
+version = "7.x-1.2"
+core = "7.x"
+project = "min"
+datestamp = "1422927488"
+

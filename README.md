@@ -14,27 +14,24 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ---------------------
 
-Min is a single-column, minimalist, content-focused 
+Min Theme is a single-column, minimalist, content-focused 
 theme for Drupal 7. This theme is geared towards content 
-creators who are looking for a lightweight blogging theme that requires 
-relatively few customizations to get started.
-
-Create blog posts out-of-the-box as Min utilizes Drupal's default Article content-type which already includes the   ability to create tags and upload images.
+creators who are looking for a lightweight blogging theme 
+that requires relatively few customizations to get started.
 
 Features:
 * Single-column.
 * Responsive.
-* Clean, minimalist design.
+* Minimalist, clean design.
 * Content-focused.
 * HTML5 & CSS3.
 * SASS.
 * Google fonts.
+* Create blog posts out-of-the-box as Min utilizes Drupal's 
+  default Article content-type which already includes the 
+  ability to create tags and upload images.
 * Support for standard Drupal theme features like 
   site-logo, site-slogan, site-name, comments and RSS feed.
-
-Demo: http://mintheme.net
-
-Drupal Project Page: https://www.drupal.org/project/min
 
 RECOMMENDED MODULES
 ---------------------
@@ -87,18 +84,18 @@ Troubleshooting & Other Recommendations
 * Ideally, you will only want to add a maximum of three to four menu items;
   the more you add, the more it might look squished on mobile devices.
   
-*	You may want to set the length on the teaser-display to around 300 
+* You may want to set the length on the teaser-display to around 300 
   characters.
   
-* If you create your new date field using the date module, you should
-	uncheck seconds, minutes and hours from the date-attributes-to-collect 
-	option.
+* If you create a new date field using the date module, you should
+  uncheck seconds, minutes and hours from the date-attributes-to-collect 
+  option.
   
 * Your date field may default to "hidden" in teaser view. In 
   the "manage display" option for the date field simply move the field out of 
   the hidden section and into the display section.
   
-* Though the option for a second menu is possible (it displays in the footer), 
+* The option for a second menu is possible (it displays in the footer), but 
   I would recommend just using the main menu.
   
 MAINTAINERS
