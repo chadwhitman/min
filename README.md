@@ -19,6 +19,9 @@ theme for Drupal 7. This theme is geared towards content
 creators who are looking for a lightweight blogging theme 
 that requires relatively few customizations to get started.
 
+Demo site: http://mintheme.net/
+Drupal Project Page: https://www.drupal.org/project/min
+
 Features:
 * Single-column.
 * Responsive.
