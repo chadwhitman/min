@@ -105,5 +105,5 @@ Troubleshooting & Other Recommendations
 MAINTAINERS
 ---------------------
 
-Current maintainers:
+Current maintainer(s):
 * Chad Whitman - https://www.drupal.org/u/chadwhitman
